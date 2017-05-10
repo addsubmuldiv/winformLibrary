@@ -36,7 +36,8 @@ namespace WindowsFormsApp3
             if (flag == 1)
             {
                 MessageBox.Show("µÇÂ¼³É¹¦£¡");
-                
+                Form form2 = new Registry_form();
+                form2.Show();
             }
             else
             {
