@@ -20,6 +20,13 @@ namespace WindowsFormsApp3
             getSqlConnection sql = new getSqlConnection();
             sqlcon = sql.GetCon();
             toolTip1.SetToolTip(readerId_box, "输入账号");
+            toolTip1.SetToolTip(readerpassword_box, "输入密码");
+            toolTip1.SetToolTip(phone_box, "输入电话号码");
+            toolTip1.SetToolTip(id_box, "输入证件号码");
+            toolTip1.SetToolTip(id_kind_box, "选择证件类型");
+            toolTip1.SetToolTip(reader_password_again, "输入密码");
+            toolTip1.SetToolTip(reader_reg_button, "点击注册");
+
         }
 
         private void reader_reg_form_FormClosing(object sender, FormClosingEventArgs e)

@@ -19,6 +19,11 @@ namespace WindowsFormsApp3
             login = Program.first;
             getSqlConnection getcon = new getSqlConnection();
             sqlcon=getcon.GetCon();
+            toolTip1.SetToolTip(reg_id, "输入账号");
+            toolTip1.SetToolTip(reg_password, "输入密码");
+            toolTip1.SetToolTip(reg_password_again, "输入密码");
+            toolTip1.SetToolTip(serial_reg_box, "输入序列号");
+            toolTip1.SetToolTip(registry_button, "点击注册");
         }
 
         private void Registry_form_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,10 +44,18 @@ namespace WindowsFormsApp3
             {
                 MessageBoxEx.EnableGlass = false;
                 MessageBoxEx.Show("请确保两次输入密码一致！");
+                return;
             }
             else
             {
                 SqlCommand sqlcom = sqlcon.CreateCommand();
+                sqlcom.CommandText = $"select count(*) from library where serial = '{serial_reg_box.Text}'";
+                if(Convert.ToInt32(sqlcom.ExecuteScalar())!=1)
+                {
+                    MessageBoxEx.EnableGlass = false;
+                    MessageBoxEx.Show("请输入正确的序列号！");
+                    return;
+                }
                 sqlcom.CommandText = $"select count(*) from manager where userid = '{reg_id.Text}'";
                 object i = sqlcom.ExecuteScalar();
                 if(1==Convert.ToInt32(i))

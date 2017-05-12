@@ -38,12 +38,14 @@ namespace WindowsFormsApp3
             this.readerId_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.readerpassword_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.phone_box = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.id_kind_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.id_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.reader_password_again = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.id_kind_box = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.id_card = new DevComponents.Editors.ComboItem();
+            this.stu_id = new DevComponents.Editors.ComboItem();
             this.SuspendLayout();
             // 
             // labelX1
@@ -167,22 +169,6 @@ namespace WindowsFormsApp3
             this.phone_box.Size = new System.Drawing.Size(147, 25);
             this.phone_box.TabIndex = 1;
             // 
-            // id_kind_box
-            // 
-            this.id_kind_box.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.id_kind_box.Border.Class = "TextBoxBorder";
-            this.id_kind_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.id_kind_box.DisabledBackColor = System.Drawing.Color.White;
-            this.id_kind_box.ForeColor = System.Drawing.Color.Black;
-            this.id_kind_box.Location = new System.Drawing.Point(107, 171);
-            this.id_kind_box.Name = "id_kind_box";
-            this.id_kind_box.PreventEnterBeep = true;
-            this.id_kind_box.Size = new System.Drawing.Size(147, 25);
-            this.id_kind_box.TabIndex = 4;
-            // 
             // id_box
             // 
             this.id_box.BackColor = System.Drawing.Color.White;
@@ -193,7 +179,7 @@ namespace WindowsFormsApp3
             this.id_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.id_box.DisabledBackColor = System.Drawing.Color.White;
             this.id_box.ForeColor = System.Drawing.Color.Black;
-            this.id_box.Location = new System.Drawing.Point(344, 171);
+            this.id_box.Location = new System.Drawing.Point(343, 173);
             this.id_box.Name = "id_box";
             this.id_box.PreventEnterBeep = true;
             this.id_box.Size = new System.Drawing.Size(149, 25);
@@ -233,13 +219,37 @@ namespace WindowsFormsApp3
             this.labelX4.TabIndex = 13;
             this.labelX4.Text = "确认密码：";
             // 
+            // id_kind_box
+            // 
+            this.id_kind_box.DisplayMember = "Text";
+            this.id_kind_box.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.id_kind_box.ForeColor = System.Drawing.Color.Black;
+            this.id_kind_box.FormattingEnabled = true;
+            this.id_kind_box.ItemHeight = 19;
+            this.id_kind_box.Items.AddRange(new object[] {
+            this.id_card,
+            this.stu_id});
+            this.id_kind_box.Location = new System.Drawing.Point(107, 173);
+            this.id_kind_box.Name = "id_kind_box";
+            this.id_kind_box.Size = new System.Drawing.Size(147, 25);
+            this.id_kind_box.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.id_kind_box.TabIndex = 14;
+            // 
+            // id_card
+            // 
+            this.id_card.Text = "身份证";
+            // 
+            // stu_id
+            // 
+            this.stu_id.Text = "学号";
+            // 
             // reader_reg_form
             // 
             this.ClientSize = new System.Drawing.Size(573, 318);
+            this.Controls.Add(this.id_kind_box);
             this.Controls.Add(this.reader_password_again);
             this.Controls.Add(this.labelX4);
             this.Controls.Add(this.id_box);
-            this.Controls.Add(this.id_kind_box);
             this.Controls.Add(this.phone_box);
             this.Controls.Add(this.readerpassword_box);
             this.Controls.Add(this.readerId_box);
@@ -252,7 +262,7 @@ namespace WindowsFormsApp3
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.Name = "reader_reg_form";
-            this.Text = "reader_reg_form";
+            this.Text = "读者注册";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reader_reg_form_FormClosing);
             this.ResumeLayout(false);
 
@@ -269,11 +279,13 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.Controls.TextBoxX readerId_box;
         private DevComponents.DotNetBar.Controls.TextBoxX readerpassword_box;
         private DevComponents.DotNetBar.Controls.TextBoxX phone_box;
-        private DevComponents.DotNetBar.Controls.TextBoxX id_kind_box;
         private DevComponents.DotNetBar.Controls.TextBoxX id_box;
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private DevComponents.DotNetBar.Controls.TextBoxX reader_password_again;
         private DevComponents.DotNetBar.LabelX labelX4;
         private System.Windows.Forms.ToolTip toolTip1;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx id_kind_box;
+        private DevComponents.Editors.ComboItem id_card;
+        private DevComponents.Editors.ComboItem stu_id;
     }
 }

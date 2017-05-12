@@ -39,6 +39,7 @@ namespace WindowsFormsApp3
             this.serial_reg_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.manager_serial = new DevComponents.DotNetBar.LabelX();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // reg_password_again
@@ -190,7 +191,7 @@ namespace WindowsFormsApp3
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Registry_form";
-            this.Text = "×¢²á";
+            this.Text = "¹ÜÀíÔ±×¢²á";
             this.Activated += new System.EventHandler(this.Registry_form_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registry_form_FormClosing);
             this.ResumeLayout(false);
@@ -208,5 +209,6 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.Controls.TextBoxX serial_reg_box;
         private DevComponents.DotNetBar.LabelX manager_serial;
         private DevComponents.DotNetBar.StyleManager styleManager1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
