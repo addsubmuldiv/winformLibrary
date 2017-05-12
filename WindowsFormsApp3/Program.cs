@@ -8,15 +8,14 @@ namespace WindowsFormsApp3
 {
     static class Program
     {
-        /// <summary>
-        /// 应用程序的主入口点。
-        /// </summary>
+        public static Login_Form first;  
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_Form());
+            first = new Login_Form();
+            Application.Run(first);
         }
     }
 }

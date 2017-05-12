@@ -36,6 +36,7 @@ namespace WindowsFormsApp3
             this.userid_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.userpassword_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.isManager = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Sign_in
@@ -60,6 +61,7 @@ namespace WindowsFormsApp3
             this.Sign_up.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.Sign_up.TabIndex = 1;
             this.Sign_up.Text = "◊¢≤·";
+            this.Sign_up.Click += new System.EventHandler(this.Sign_up_Click);
             // 
             // labelX1
             // 
@@ -117,9 +119,21 @@ namespace WindowsFormsApp3
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Silver;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
             // 
+            // isManager
+            // 
+            this.isManager.AutoSize = true;
+            this.isManager.Location = new System.Drawing.Point(246, 215);
+            this.isManager.Name = "isManager";
+            this.isManager.Size = new System.Drawing.Size(89, 19);
+            this.isManager.TabIndex = 6;
+            this.isManager.Text = "π‹¿Ì‘±£ø";
+            this.isManager.UseVisualStyleBackColor = true;
+            // 
             // Login_Form
             // 
+            this.AcceptButton = this.Sign_in;
             this.ClientSize = new System.Drawing.Size(382, 387);
+            this.Controls.Add(this.isManager);
             this.Controls.Add(this.userpassword_box);
             this.Controls.Add(this.userid_box);
             this.Controls.Add(this.labelX2);
@@ -131,7 +145,9 @@ namespace WindowsFormsApp3
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login_Form";
             this.Text = "Login";
+            this.Activated += new System.EventHandler(this.Login_Form_Activated);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,5 +160,6 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.Controls.TextBoxX userid_box;
         private DevComponents.DotNetBar.Controls.TextBoxX userpassword_box;
         private DevComponents.DotNetBar.StyleManager styleManager1;
+        private System.Windows.Forms.CheckBox isManager;
     }
 }
