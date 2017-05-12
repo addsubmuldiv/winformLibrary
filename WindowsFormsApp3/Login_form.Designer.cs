@@ -37,6 +37,7 @@ namespace WindowsFormsApp3
             this.userpassword_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.isManager = new System.Windows.Forms.CheckBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // Sign_in
@@ -89,11 +90,14 @@ namespace WindowsFormsApp3
             // 
             // userid_box
             // 
+            this.userid_box.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.userid_box.Border.Class = "TextBoxBorder";
             this.userid_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.userid_box.DisabledBackColor = System.Drawing.Color.White;
+            this.userid_box.ForeColor = System.Drawing.Color.Black;
             this.userid_box.Location = new System.Drawing.Point(125, 94);
             this.userid_box.Name = "userid_box";
             this.userid_box.PreventEnterBeep = true;
@@ -102,11 +106,14 @@ namespace WindowsFormsApp3
             // 
             // userpassword_box
             // 
+            this.userpassword_box.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.userpassword_box.Border.Class = "TextBoxBorder";
             this.userpassword_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.userpassword_box.DisabledBackColor = System.Drawing.Color.White;
+            this.userpassword_box.ForeColor = System.Drawing.Color.Black;
             this.userpassword_box.Location = new System.Drawing.Point(125, 157);
             this.userpassword_box.Name = "userpassword_box";
             this.userpassword_box.PasswordChar = '*';
@@ -116,8 +123,8 @@ namespace WindowsFormsApp3
             // 
             // styleManager1
             // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Silver;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2016;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199))))));
             // 
             // isManager
             // 
@@ -144,7 +151,7 @@ namespace WindowsFormsApp3
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login_Form";
-            this.Text = "Login";
+            this.Text = "µÇÂ¼";
             this.Activated += new System.EventHandler(this.Login_Form_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,5 +168,6 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.Controls.TextBoxX userpassword_box;
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private System.Windows.Forms.CheckBox isManager;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

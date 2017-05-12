@@ -23,7 +23,8 @@ namespace WindowsFormsApp3
 
         private void Registry_form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.login.Enabled = true;
+            login.Enabled = true;
+            login.Activate();
         }
 
         private void registry_button_Click(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace WindowsFormsApp3
                     MessageBoxEx.Show("×¢²á³É¹¦£¡");
                     this.Close();
                     login.Enabled = true;
+                    login.Activate();
                 }
                 else
                 {
@@ -69,6 +71,20 @@ namespace WindowsFormsApp3
         private void Registry_form_Activated(object sender, EventArgs e)
         {
             reg_id.Focus();
+        }
+
+        private void isManager_reg_CheckedChanged(object sender, EventArgs e)
+        {
+            if (manager_serial.Visible == false)
+            {
+                serial_reg_box.Visible = true;
+                manager_serial.Visible = true;
+            }
+            else
+            {
+                serial_reg_box.Visible = false;
+                manager_serial.Visible = false;
+            }
         }
     }
 }

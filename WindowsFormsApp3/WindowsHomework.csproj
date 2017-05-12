@@ -55,6 +55,12 @@
     <Compile Include="getSqlConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reader_reg_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reader_reg_form.Designer.cs">
+      <DependentUpon>reader_reg_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registry_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="reader_reg_form.resx">
+      <DependentUpon>reader_reg_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registry_form.resx">
       <DependentUpon>Registry_form.cs</DependentUpon>
     </EmbeddedResource>
