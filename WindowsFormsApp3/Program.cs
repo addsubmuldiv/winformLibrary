@@ -8,14 +8,17 @@ namespace WindowsFormsApp3
 {
     static class Program
     {
-        public static Login_Form first;  
+        public static Login_Form first;
+        public static Form second;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            first = new Login_Form();
-            Application.Run(first);
+            //   first = new Login_Form();
+            second = new Main_form();
+ //           Application.Run(first);
+            Application.Run(second);
         }
     }
 }

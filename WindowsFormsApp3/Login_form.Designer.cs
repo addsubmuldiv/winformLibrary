@@ -128,6 +128,7 @@ namespace WindowsFormsApp3
             // 
             // isManager
             // 
+            this.isManager.AccessibleName = "isManager";
             this.isManager.AutoSize = true;
             this.isManager.Location = new System.Drawing.Point(246, 215);
             this.isManager.Name = "isManager";
@@ -150,6 +151,7 @@ namespace WindowsFormsApp3
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "Login_Form";
             this.Text = "µÇÂ¼";
             this.Activated += new System.EventHandler(this.Login_Form_Activated);

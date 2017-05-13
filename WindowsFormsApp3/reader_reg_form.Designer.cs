@@ -261,6 +261,7 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.MaximizeBox = false;
             this.Name = "reader_reg_form";
             this.Text = "¶ÁÕß×¢²á";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reader_reg_form_FormClosing);

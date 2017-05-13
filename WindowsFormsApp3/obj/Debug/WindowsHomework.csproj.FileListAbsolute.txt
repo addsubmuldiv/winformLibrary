@@ -11,3 +11,6 @@ c:\users\lighters_c\documents\visual studio 2017\Projects\WindowsFormsApp3\Windo
 c:\users\lighters_c\documents\visual studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Registry_form.resources
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.reader_reg_form.resources
+C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Main_form.resources
+C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.reader_form.resources
+C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\DevComponents.TreeGX.dll

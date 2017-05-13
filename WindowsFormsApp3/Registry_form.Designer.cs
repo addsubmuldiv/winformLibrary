@@ -190,6 +190,7 @@ namespace WindowsFormsApp3
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Registry_form";
             this.Text = "π‹¿Ì‘±◊¢≤·";
             this.Activated += new System.EventHandler(this.Registry_form_Activated);

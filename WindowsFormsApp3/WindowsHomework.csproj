@@ -32,9 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=14.0.0.15, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,8 +57,20 @@
       <DependentUpon>Login_form.cs</DependentUpon>
     </Compile>
     <Compile Include="getSqlConnection.cs" />
+    <Compile Include="Main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_form.Designer.cs">
+      <DependentUpon>Main_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reader_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reader_form.Designer.cs">
+      <DependentUpon>reader_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="reader_reg_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +86,9 @@
     <EmbeddedResource Include="Login_form.resx">
       <DependentUpon>Login_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main_form.resx">
+      <DependentUpon>Main_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="reader_form.resx">
+      <DependentUpon>reader_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="reader_reg_form.resx">
       <DependentUpon>reader_reg_form.cs</DependentUpon>
     </EmbeddedResource>
