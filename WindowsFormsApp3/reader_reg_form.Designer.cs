@@ -50,6 +50,9 @@ namespace WindowsFormsApp3
             // 
             // labelX1
             // 
+            this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -62,6 +65,9 @@ namespace WindowsFormsApp3
             // 
             // labelX2
             // 
+            this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -74,6 +80,9 @@ namespace WindowsFormsApp3
             // 
             // labelX3
             // 
+            this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -86,6 +95,9 @@ namespace WindowsFormsApp3
             // 
             // labelX5
             // 
+            this.labelX5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -98,6 +110,9 @@ namespace WindowsFormsApp3
             // 
             // labelX6
             // 
+            this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -111,6 +126,9 @@ namespace WindowsFormsApp3
             // reader_reg_button
             // 
             this.reader_reg_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.reader_reg_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.reader_reg_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.reader_reg_button.Location = new System.Drawing.Point(231, 259);
             this.reader_reg_button.Name = "reader_reg_button";
@@ -122,6 +140,9 @@ namespace WindowsFormsApp3
             // 
             // readerId_box
             // 
+            this.readerId_box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.readerId_box.BackColor = System.Drawing.Color.White;
             // 
             // 
@@ -138,6 +159,9 @@ namespace WindowsFormsApp3
             // 
             // readerpassword_box
             // 
+            this.readerpassword_box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.readerpassword_box.BackColor = System.Drawing.Color.White;
             // 
             // 
@@ -155,6 +179,9 @@ namespace WindowsFormsApp3
             // 
             // phone_box
             // 
+            this.phone_box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.phone_box.BackColor = System.Drawing.Color.White;
             // 
             // 
@@ -171,6 +198,9 @@ namespace WindowsFormsApp3
             // 
             // id_box
             // 
+            this.id_box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.id_box.BackColor = System.Drawing.Color.White;
             // 
             // 
@@ -192,6 +222,9 @@ namespace WindowsFormsApp3
             // 
             // reader_password_again
             // 
+            this.reader_password_again.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.reader_password_again.BackColor = System.Drawing.Color.White;
             // 
             // 
@@ -209,6 +242,9 @@ namespace WindowsFormsApp3
             // 
             // labelX4
             // 
+            this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -221,6 +257,9 @@ namespace WindowsFormsApp3
             // 
             // id_kind_box
             // 
+            this.id_kind_box.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.id_kind_box.DisplayMember = "Text";
             this.id_kind_box.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.id_kind_box.ForeColor = System.Drawing.Color.Black;

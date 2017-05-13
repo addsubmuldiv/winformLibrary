@@ -78,8 +78,13 @@ namespace WindowsFormsApp3
             this.labelItem4 = new DevComponents.DotNetBar.LabelItem();
             this.labelItem5 = new DevComponents.DotNetBar.LabelItem();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -137,19 +142,19 @@ namespace WindowsFormsApp3
             // add_reader
             // 
             this.add_reader.Name = "add_reader";
-            this.add_reader.Size = new System.Drawing.Size(181, 26);
+            this.add_reader.Size = new System.Drawing.Size(174, 26);
             this.add_reader.Text = "增加读者";
             // 
             // delete_reader
             // 
             this.delete_reader.Name = "delete_reader";
-            this.delete_reader.Size = new System.Drawing.Size(181, 26);
+            this.delete_reader.Size = new System.Drawing.Size(174, 26);
             this.delete_reader.Text = "删除读者";
             // 
             // update_reader
             // 
             this.update_reader.Name = "update_reader";
-            this.update_reader.Size = new System.Drawing.Size(181, 26);
+            this.update_reader.Size = new System.Drawing.Size(174, 26);
             this.update_reader.Text = "更新读者信息";
             // 
             // 我的图书馆ToolStripMenuItem
@@ -165,19 +170,19 @@ namespace WindowsFormsApp3
             // add_borrow
             // 
             this.add_borrow.Name = "add_borrow";
-            this.add_borrow.Size = new System.Drawing.Size(181, 26);
+            this.add_borrow.Size = new System.Drawing.Size(174, 26);
             this.add_borrow.Text = "增加借阅信息";
             // 
             // update_borrow
             // 
             this.update_borrow.Name = "update_borrow";
-            this.update_borrow.Size = new System.Drawing.Size(181, 26);
+            this.update_borrow.Size = new System.Drawing.Size(174, 26);
             this.update_borrow.Text = "更新借阅信息";
             // 
             // return_handle
             // 
             this.return_handle.Name = "return_handle";
-            this.return_handle.Size = new System.Drawing.Size(181, 26);
+            this.return_handle.Size = new System.Drawing.Size(174, 26);
             this.return_handle.Text = "还书处理";
             // 
             // about
@@ -192,8 +197,10 @@ namespace WindowsFormsApp3
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
+            this.toolStripButton5,
             this.toolStripButton3,
-            this.toolStripButton4});
+            this.toolStripButton4,
+            this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(816, 27);
@@ -208,6 +215,7 @@ namespace WindowsFormsApp3
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "图书入库";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -295,7 +303,9 @@ namespace WindowsFormsApp3
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(0, 58);
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "add_book";
             treeNode1.Text = "图书入库";
@@ -325,28 +335,74 @@ namespace WindowsFormsApp3
             treeNode4,
             treeNode8,
             treeNode12});
-            this.treeView1.Size = new System.Drawing.Size(170, 331);
+            this.treeView1.Size = new System.Drawing.Size(170, 342);
             this.treeView1.TabIndex = 3;
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton5.Text = "更新图书信息";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton6.Text = "更新读者信息";
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.treeView1);
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx1.Location = new System.Drawing.Point(0, 58);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(171, 342);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 5;
+            this.panelEx1.Text = "panelEx1";
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(170, 58);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(646, 342);
+            this.panel1.TabIndex = 9;
             // 
             // Main_form
             // 
             this.ClientSize = new System.Drawing.Size(816, 428);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "Main_form";
             this.Text = "Main_form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_form_FormClosing);
             this.Load += new System.EventHandler(this.Main_form_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.panelEx1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +437,9 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.LabelItem labelItem3;
         private DevComponents.DotNetBar.LabelItem labelItem4;
         private DevComponents.DotNetBar.LabelItem labelItem5;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private DevComponents.DotNetBar.PanelEx panelEx1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

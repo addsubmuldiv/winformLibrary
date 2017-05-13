@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>20170514121014910_easyicon_net_32.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
@@ -50,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_book_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_book_frm.Designer.cs">
+      <DependentUpon>add_book_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +92,9 @@
     <Compile Include="Registry_form.Designer.cs">
       <DependentUpon>Registry_form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="add_book_frm.resx">
+      <DependentUpon>add_book_frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login_form.resx">
       <DependentUpon>Login_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="20170514121014910_easyicon_net_32.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

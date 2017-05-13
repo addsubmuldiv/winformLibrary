@@ -37,5 +37,27 @@ namespace WindowsFormsApp3
             Timethread.IsBackground = true;
             Timethread.Start();
         }
+
+        private void Main_form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MessageBoxEx.EnableGlass = false;
+            if(MessageBoxEx.Show("将要关闭窗体，是否继续？","询问",MessageBoxButtons.YesNo)==DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            add_book_frm a = new add_book_frm();
+            a.TopLevel = false;
+            a.Parent = panel1;
+            a.WindowState = FormWindowState.Maximized;
+            a.Show();
+        }
     }
 }
