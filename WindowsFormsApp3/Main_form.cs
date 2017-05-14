@@ -27,8 +27,9 @@ namespace WindowsFormsApp3
                         this.Invoke(
                             (MethodInvoker)delegate ()
                             {
-                               // this.Refresh();
-                                this.labelItem5.Text = DateTime.Now.ToString();
+                                // this.Refresh();
+                                try { this.labelItem5.Text = DateTime.Now.ToString(); }
+                                catch { }
                             });
                         System.Threading.Thread.Sleep(1000);
                     }
@@ -53,11 +54,26 @@ namespace WindowsFormsApp3
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            add_book_frm a = new add_book_frm();
-            a.TopLevel = false;
-            a.Parent = panel1;
-            a.WindowState = FormWindowState.Maximized;
-            a.Show();
+            add_book_frm a = add_book_frm.getInstance();
+            set_child_frm(a, panel1);
+        }
+        private void set_child_frm(Form frm,Panel panel)
+        {
+            frm.TopLevel = false;
+            frm.Parent = panel;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
+        private void add_book_Click(object sender, EventArgs e)
+        {
+            toolStripButton1_Click(sender, e);
+        }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if(e.Node.Name=="add_book")
+                toolStripButton1_Click(sender, e);
         }
     }
 }

@@ -77,5 +77,13 @@ namespace WindowsFormsApp3
                 MessageBoxEx.Show("◊¢≤· ß∞‹£¨«Î÷ÿ ‘£°");
             }
         }
+
+        private void phone_box_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

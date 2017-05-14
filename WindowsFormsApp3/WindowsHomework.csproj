@@ -92,6 +92,12 @@
     <Compile Include="Registry_form.Designer.cs">
       <DependentUpon>Registry_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="update_book_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_book_frm.Designer.cs">
+      <DependentUpon>update_book_frm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="add_book_frm.resx">
       <DependentUpon>add_book_frm.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registry_form.resx">
       <DependentUpon>Registry_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_book_frm.resx">
+      <DependentUpon>update_book_frm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -68,8 +68,10 @@ namespace WindowsFormsApp3
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.StatusBar = new DevComponents.DotNetBar.Metro.MetroStatusBar();
             this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
@@ -78,8 +80,6 @@ namespace WindowsFormsApp3
             this.labelItem4 = new DevComponents.DotNetBar.LabelItem();
             this.labelItem5 = new DevComponents.DotNetBar.LabelItem();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -97,7 +97,7 @@ namespace WindowsFormsApp3
             this.about});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(816, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(972, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -114,19 +114,20 @@ namespace WindowsFormsApp3
             // add_book
             // 
             this.add_book.Name = "add_book";
-            this.add_book.Size = new System.Drawing.Size(181, 26);
+            this.add_book.Size = new System.Drawing.Size(174, 26);
             this.add_book.Text = "图书入库";
+            this.add_book.Click += new System.EventHandler(this.add_book_Click);
             // 
             // delete_book
             // 
             this.delete_book.Name = "delete_book";
-            this.delete_book.Size = new System.Drawing.Size(181, 26);
+            this.delete_book.Size = new System.Drawing.Size(174, 26);
             this.delete_book.Text = "删除图书";
             // 
             // update_book
             // 
             this.update_book.Name = "update_book";
-            this.update_book.Size = new System.Drawing.Size(181, 26);
+            this.update_book.Size = new System.Drawing.Size(174, 26);
             this.update_book.Text = "更新图书信息";
             // 
             // 读者管理ToolStripMenuItem
@@ -203,7 +204,7 @@ namespace WindowsFormsApp3
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(816, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(972, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -226,6 +227,15 @@ namespace WindowsFormsApp3
             this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton2.Text = "删除图书";
             // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton5.Text = "更新图书信息";
+            // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -243,6 +253,15 @@ namespace WindowsFormsApp3
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton4.Text = "删除读者";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton6.Text = "更新读者信息";
             // 
             // styleManager1
             // 
@@ -265,9 +284,9 @@ namespace WindowsFormsApp3
             this.labelItem3,
             this.labelItem4,
             this.labelItem5});
-            this.StatusBar.Location = new System.Drawing.Point(0, 406);
+            this.StatusBar.Location = new System.Drawing.Point(0, 602);
             this.StatusBar.Name = "StatusBar";
-            this.StatusBar.Size = new System.Drawing.Size(816, 22);
+            this.StatusBar.Size = new System.Drawing.Size(972, 22);
             this.StatusBar.TabIndex = 2;
             this.StatusBar.Text = "metroStatusBar1";
             // 
@@ -335,36 +354,21 @@ namespace WindowsFormsApp3
             treeNode4,
             treeNode8,
             treeNode12});
-            this.treeView1.Size = new System.Drawing.Size(170, 342);
+            this.treeView1.Size = new System.Drawing.Size(170, 538);
             this.treeView1.TabIndex = 3;
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton5.Text = "更新图书信息";
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton6.Text = "更新读者信息";
+            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // panelEx1
             // 
+            this.panelEx1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx1.Controls.Add(this.treeView1);
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Location = new System.Drawing.Point(0, 58);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(171, 342);
+            this.panelEx1.Size = new System.Drawing.Size(171, 538);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -376,14 +380,17 @@ namespace WindowsFormsApp3
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Location = new System.Drawing.Point(170, 58);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(646, 342);
+            this.panel1.Size = new System.Drawing.Size(802, 538);
             this.panel1.TabIndex = 9;
             // 
             // Main_form
             // 
-            this.ClientSize = new System.Drawing.Size(816, 428);
+            this.ClientSize = new System.Drawing.Size(972, 624);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.StatusBar);
@@ -394,6 +401,7 @@ namespace WindowsFormsApp3
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Main_form";
             this.Text = "Main_form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_form_FormClosing);

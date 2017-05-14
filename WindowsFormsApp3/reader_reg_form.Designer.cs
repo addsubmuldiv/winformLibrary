@@ -195,6 +195,7 @@ namespace WindowsFormsApp3
             this.phone_box.PreventEnterBeep = true;
             this.phone_box.Size = new System.Drawing.Size(147, 25);
             this.phone_box.TabIndex = 1;
+            this.phone_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_box_KeyPress);
             // 
             // id_box
             // 
