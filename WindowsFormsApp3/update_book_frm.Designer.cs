@@ -80,12 +80,14 @@ namespace WindowsFormsApp3
             this.listViewEx1.FullRowSelect = true;
             this.listViewEx1.GridLines = true;
             this.listViewEx1.LabelEdit = true;
-            this.listViewEx1.Location = new System.Drawing.Point(53, 18);
+            this.listViewEx1.Location = new System.Drawing.Point(53, 22);
             this.listViewEx1.Name = "listViewEx1";
             this.listViewEx1.Size = new System.Drawing.Size(681, 227);
             this.listViewEx1.TabIndex = 40;
             this.listViewEx1.UseCompatibleStateImageBehavior = false;
             this.listViewEx1.View = System.Windows.Forms.View.Details;
+            this.listViewEx1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewEx1_ColumnClick);
+            this.listViewEx1.SelectedIndexChanged += new System.EventHandler(this.listViewEx1_SelectedIndexChanged);
             // 
             // col_name
             // 
@@ -136,7 +138,7 @@ namespace WindowsFormsApp3
             // 
             this.update_book.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.update_book.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.update_book.Location = new System.Drawing.Point(314, 414);
+            this.update_book.Location = new System.Drawing.Point(314, 418);
             this.update_book.Name = "update_book";
             this.update_book.Size = new System.Drawing.Size(137, 38);
             this.update_book.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -145,7 +147,7 @@ namespace WindowsFormsApp3
             // 
             // datetime
             // 
-            this.datetime.Location = new System.Drawing.Point(480, 357);
+            this.datetime.Location = new System.Drawing.Point(480, 361);
             this.datetime.Name = "datetime";
             this.datetime.Size = new System.Drawing.Size(200, 25);
             this.datetime.TabIndex = 38;
@@ -176,7 +178,7 @@ namespace WindowsFormsApp3
             this.novel,
             this.education,
             this.history});
-            this.kind.Location = new System.Drawing.Point(480, 326);
+            this.kind.Location = new System.Drawing.Point(480, 330);
             this.kind.Name = "kind";
             this.kind.Size = new System.Drawing.Size(121, 25);
             this.kind.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -208,7 +210,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX10.Location = new System.Drawing.Point(586, 297);
+            this.labelX10.Location = new System.Drawing.Point(586, 301);
             this.labelX10.Name = "labelX10";
             this.labelX10.Size = new System.Drawing.Size(75, 23);
             this.labelX10.TabIndex = 36;
@@ -220,7 +222,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX9.Location = new System.Drawing.Point(586, 266);
+            this.labelX9.Location = new System.Drawing.Point(586, 270);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(75, 23);
             this.labelX9.TabIndex = 35;
@@ -236,7 +238,7 @@ namespace WindowsFormsApp3
             this.number.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.number.DisabledBackColor = System.Drawing.Color.White;
             this.number.ForeColor = System.Drawing.Color.Black;
-            this.number.Location = new System.Drawing.Point(480, 295);
+            this.number.Location = new System.Drawing.Point(480, 299);
             this.number.Name = "number";
             this.number.PreventEnterBeep = true;
             this.number.Size = new System.Drawing.Size(100, 25);
@@ -252,7 +254,7 @@ namespace WindowsFormsApp3
             this.price.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.price.DisabledBackColor = System.Drawing.Color.White;
             this.price.ForeColor = System.Drawing.Color.Black;
-            this.price.Location = new System.Drawing.Point(480, 264);
+            this.price.Location = new System.Drawing.Point(480, 268);
             this.price.Name = "price";
             this.price.PreventEnterBeep = true;
             this.price.Size = new System.Drawing.Size(100, 25);
@@ -268,7 +270,7 @@ namespace WindowsFormsApp3
             this.publishing.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.publishing.DisabledBackColor = System.Drawing.Color.White;
             this.publishing.ForeColor = System.Drawing.Color.Black;
-            this.publishing.Location = new System.Drawing.Point(180, 357);
+            this.publishing.Location = new System.Drawing.Point(180, 361);
             this.publishing.Name = "publishing";
             this.publishing.PreventEnterBeep = true;
             this.publishing.Size = new System.Drawing.Size(100, 25);
@@ -283,9 +285,8 @@ namespace WindowsFormsApp3
             this.author.Border.Class = "TextBoxBorder";
             this.author.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.author.DisabledBackColor = System.Drawing.Color.White;
-            this.author.Enabled = false;
             this.author.ForeColor = System.Drawing.Color.Black;
-            this.author.Location = new System.Drawing.Point(180, 326);
+            this.author.Location = new System.Drawing.Point(180, 330);
             this.author.Name = "author";
             this.author.PreventEnterBeep = true;
             this.author.Size = new System.Drawing.Size(100, 25);
@@ -302,7 +303,7 @@ namespace WindowsFormsApp3
             this.bookid.DisabledBackColor = System.Drawing.Color.White;
             this.bookid.Enabled = false;
             this.bookid.ForeColor = System.Drawing.Color.Black;
-            this.bookid.Location = new System.Drawing.Point(180, 295);
+            this.bookid.Location = new System.Drawing.Point(180, 299);
             this.bookid.Name = "bookid";
             this.bookid.PreventEnterBeep = true;
             this.bookid.Size = new System.Drawing.Size(100, 25);
@@ -318,7 +319,7 @@ namespace WindowsFormsApp3
             this.bookname.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.bookname.DisabledBackColor = System.Drawing.Color.White;
             this.bookname.ForeColor = System.Drawing.Color.Black;
-            this.bookname.Location = new System.Drawing.Point(180, 264);
+            this.bookname.Location = new System.Drawing.Point(180, 268);
             this.bookname.Name = "bookname";
             this.bookname.PreventEnterBeep = true;
             this.bookname.Size = new System.Drawing.Size(100, 25);
@@ -330,7 +331,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(116, 359);
+            this.labelX8.Location = new System.Drawing.Point(116, 363);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(75, 23);
             this.labelX8.TabIndex = 28;
@@ -342,7 +343,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Location = new System.Drawing.Point(402, 359);
+            this.labelX7.Location = new System.Drawing.Point(402, 363);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(86, 23);
             this.labelX7.TabIndex = 27;
@@ -354,7 +355,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Location = new System.Drawing.Point(432, 328);
+            this.labelX6.Location = new System.Drawing.Point(432, 332);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(75, 23);
             this.labelX6.TabIndex = 26;
@@ -366,7 +367,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Location = new System.Drawing.Point(401, 297);
+            this.labelX5.Location = new System.Drawing.Point(401, 301);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(86, 23);
             this.labelX5.TabIndex = 25;
@@ -378,7 +379,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(431, 264);
+            this.labelX4.Location = new System.Drawing.Point(431, 268);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(75, 23);
             this.labelX4.TabIndex = 24;
@@ -390,7 +391,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(93, 328);
+            this.labelX3.Location = new System.Drawing.Point(93, 332);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(92, 23);
             this.labelX3.TabIndex = 23;
@@ -402,7 +403,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(131, 297);
+            this.labelX2.Location = new System.Drawing.Point(131, 301);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(75, 23);
             this.labelX2.TabIndex = 22;
@@ -414,7 +415,7 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(131, 266);
+            this.labelX1.Location = new System.Drawing.Point(131, 270);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
             this.labelX1.TabIndex = 21;

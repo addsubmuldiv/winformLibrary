@@ -59,6 +59,7 @@
     <Compile Include="add_book_frm.Designer.cs">
       <DependentUpon>add_book_frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListViewSorter.cs" />
     <Compile Include="Login_form.cs">
       <SubType>Form</SubType>
     </Compile>

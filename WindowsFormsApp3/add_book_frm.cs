@@ -21,7 +21,6 @@ namespace WindowsFormsApp3
             sqlcon = getcon.GetCon();
             try { sqlcon.Open(); }
             catch(Exception ex) { }
-            listViewEx1.BeginUpdate();
             /*     for(int i=0;i<10;i++)
                  {
                      ListViewItem a = new ListViewItem();
@@ -40,6 +39,7 @@ namespace WindowsFormsApp3
         }
         private void read_from_database_to_listview()
         {
+            listViewEx1.BeginUpdate();
             SqlCommand sqlcom = sqlcon.CreateCommand();
             sqlcom.CommandText = "select * from book";
             SqlDataReader sqlreader = sqlcom.ExecuteReader();
@@ -142,6 +142,19 @@ namespace WindowsFormsApp3
                 kind.Text = a.SubItems[7].Text;
                 datetime.Value = DateTime.Parse(a.SubItems[8].Text);
             }
+        }
+
+        private void listViewEx1_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            if (this.listViewEx1.Columns[e.Column].Tag == null)
+                this.listViewEx1.Columns[e.Column].Tag = true;
+            bool flag = (bool)this.listViewEx1.Columns[e.Column].Tag;
+            if (flag)
+                this.listViewEx1.Columns[e.Column].Tag = false;
+            else
+                this.listViewEx1.Columns[e.Column].Tag = true;
+            this.listViewEx1.ListViewItemSorter = new ListViewSort(e.Column, this.listViewEx1.Columns[e.Column].Tag);
+            this.listViewEx1.Sort();//对列表进行自定义排序  
         }
     }
 }

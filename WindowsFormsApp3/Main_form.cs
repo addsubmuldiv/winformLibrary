@@ -24,13 +24,17 @@ namespace WindowsFormsApp3
                 {
                     while (true)
                     {
-                        this.Invoke(
+                        try
+                        {
+                            this.Invoke(
                             (MethodInvoker)delegate ()
                             {
                                 // this.Refresh();
                                 try { this.labelItem5.Text = DateTime.Now.ToString(); }
                                 catch { }
                             });
+                        }
+                        catch { }
                         System.Threading.Thread.Sleep(1000);
                     }
                 }
@@ -54,8 +58,9 @@ namespace WindowsFormsApp3
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            add_book_frm a = add_book_frm.getInstance();
-            set_child_frm(a, panel1);
+            add_book_frm frm = add_book_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.BringToFront();
         }
         private void set_child_frm(Form frm,Panel panel)
         {
@@ -72,8 +77,18 @@ namespace WindowsFormsApp3
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            if(e.Node.Name=="add_book")
+            if (e.Node.Name == "add_book")
                 toolStripButton1_Click(sender, e);
+            else if (e.Node.Name == "update_book")
+                toolStripButton5_Click(sender, e);
+
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            update_book_frm frm = update_book_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.BringToFront();
         }
     }
 }
