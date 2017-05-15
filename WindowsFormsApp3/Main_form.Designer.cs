@@ -114,21 +114,22 @@ namespace WindowsFormsApp3
             // add_book
             // 
             this.add_book.Name = "add_book";
-            this.add_book.Size = new System.Drawing.Size(174, 26);
+            this.add_book.Size = new System.Drawing.Size(181, 26);
             this.add_book.Text = "图书入库";
             this.add_book.Click += new System.EventHandler(this.add_book_Click);
             // 
             // delete_book
             // 
             this.delete_book.Name = "delete_book";
-            this.delete_book.Size = new System.Drawing.Size(174, 26);
+            this.delete_book.Size = new System.Drawing.Size(181, 26);
             this.delete_book.Text = "删除图书";
             // 
             // update_book
             // 
             this.update_book.Name = "update_book";
-            this.update_book.Size = new System.Drawing.Size(174, 26);
+            this.update_book.Size = new System.Drawing.Size(181, 26);
             this.update_book.Text = "更新图书信息";
+            this.update_book.Click += new System.EventHandler(this.update_book_Click);
             // 
             // 读者管理ToolStripMenuItem
             // 

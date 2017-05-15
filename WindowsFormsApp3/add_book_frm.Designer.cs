@@ -146,7 +146,7 @@ namespace WindowsFormsApp3
             // 
             this.add_book.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.add_book.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.add_book.Location = new System.Drawing.Point(314, 418);
+            this.add_book.Location = new System.Drawing.Point(314, 432);
             this.add_book.Name = "add_book";
             this.add_book.Size = new System.Drawing.Size(137, 38);
             this.add_book.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -158,7 +158,7 @@ namespace WindowsFormsApp3
             // 
             this.datetime.Location = new System.Drawing.Point(480, 361);
             this.datetime.Name = "datetime";
-            this.datetime.Size = new System.Drawing.Size(200, 25);
+            this.datetime.Size = new System.Drawing.Size(200, 21);
             this.datetime.TabIndex = 58;
             // 
             // kind
@@ -250,7 +250,7 @@ namespace WindowsFormsApp3
             this.number.Location = new System.Drawing.Point(480, 299);
             this.number.Name = "number";
             this.number.PreventEnterBeep = true;
-            this.number.Size = new System.Drawing.Size(100, 25);
+            this.number.Size = new System.Drawing.Size(100, 21);
             this.number.TabIndex = 54;
             // 
             // price
@@ -266,7 +266,7 @@ namespace WindowsFormsApp3
             this.price.Location = new System.Drawing.Point(480, 268);
             this.price.Name = "price";
             this.price.PreventEnterBeep = true;
-            this.price.Size = new System.Drawing.Size(100, 25);
+            this.price.Size = new System.Drawing.Size(100, 21);
             this.price.TabIndex = 53;
             // 
             // publishing
@@ -282,7 +282,7 @@ namespace WindowsFormsApp3
             this.publishing.Location = new System.Drawing.Point(180, 361);
             this.publishing.Name = "publishing";
             this.publishing.PreventEnterBeep = true;
-            this.publishing.Size = new System.Drawing.Size(100, 25);
+            this.publishing.Size = new System.Drawing.Size(100, 21);
             this.publishing.TabIndex = 52;
             // 
             // author
@@ -298,7 +298,7 @@ namespace WindowsFormsApp3
             this.author.Location = new System.Drawing.Point(180, 330);
             this.author.Name = "author";
             this.author.PreventEnterBeep = true;
-            this.author.Size = new System.Drawing.Size(100, 25);
+            this.author.Size = new System.Drawing.Size(100, 21);
             this.author.TabIndex = 51;
             // 
             // bookid
@@ -314,7 +314,7 @@ namespace WindowsFormsApp3
             this.bookid.Location = new System.Drawing.Point(180, 299);
             this.bookid.Name = "bookid";
             this.bookid.PreventEnterBeep = true;
-            this.bookid.Size = new System.Drawing.Size(100, 25);
+            this.bookid.Size = new System.Drawing.Size(100, 21);
             this.bookid.TabIndex = 50;
             // 
             // bookname
@@ -330,7 +330,7 @@ namespace WindowsFormsApp3
             this.bookname.Location = new System.Drawing.Point(180, 268);
             this.bookname.Name = "bookname";
             this.bookname.PreventEnterBeep = true;
-            this.bookname.Size = new System.Drawing.Size(100, 25);
+            this.bookname.Size = new System.Drawing.Size(100, 21);
             this.bookname.TabIndex = 49;
             // 
             // labelX8

@@ -15,9 +15,9 @@ namespace WindowsFormsApp3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //   first = new Login_Form();
+       //        first = new Login_Form();
             second = new Main_form();
- //           Application.Run(first);
+        //    Application.Run(first);
             Application.Run(second);
         }
     }

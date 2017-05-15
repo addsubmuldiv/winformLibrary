@@ -12,7 +12,7 @@ namespace WindowsFormsApp3
     public partial class Login_Form : DevComponents.DotNetBar.OfficeForm
     {
         SqlConnection sqlcon;
-
+        public static int count = 0;
         public Login_Form()
         {
             InitializeComponent();
@@ -34,10 +34,10 @@ namespace WindowsFormsApp3
 
         private void Sign_in_Click(object sender, EventArgs e)
         {
+            MessageBoxEx.EnableGlass = false;
             SqlCommand sqlcom = sqlcon.CreateCommand();
             if (userid_box.Text.Length == 0 || userpassword_box.Text.Length == 0)
             {
-                MessageBoxEx.EnableGlass = false;
                 MessageBoxEx.Show("账号或密码不能为空！");
                 return;
             }
@@ -53,11 +53,23 @@ namespace WindowsFormsApp3
             int flag = Convert.ToInt32(i);
             if (flag == 1)
             {
-                MessageBox.Show("登录成功！");
+                MessageBoxEx.Show("登录成功！");
+                this.Hide();
+                if (isManager.Checked)
+                {
+                    Form mainfrm = new Main_form();
+                    mainfrm.Show();
+                }
             }
             else
             {
-                MessageBox.Show("登录失败！\n请检查账号和密码是否正确！");
+                MessageBoxEx.Show("登录失败！\n请检查账号和密码是否正确！");
+                count++;
+                if (count == 3)
+                {
+                    MessageBoxEx.Show("登录失败次数过多！\n系统自动退出！");
+                    this.Close();
+                }
             }
         }
 

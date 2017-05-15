@@ -62,6 +62,9 @@ namespace WindowsFormsApp3
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.search_box = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.search = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // listViewEx1
@@ -138,18 +141,19 @@ namespace WindowsFormsApp3
             // 
             this.update_book.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.update_book.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.update_book.Location = new System.Drawing.Point(314, 418);
+            this.update_book.Location = new System.Drawing.Point(314, 432);
             this.update_book.Name = "update_book";
             this.update_book.Size = new System.Drawing.Size(137, 38);
             this.update_book.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.update_book.TabIndex = 39;
             this.update_book.Text = "更新";
+            this.update_book.Click += new System.EventHandler(this.update_book_Click);
             // 
             // datetime
             // 
             this.datetime.Location = new System.Drawing.Point(480, 361);
             this.datetime.Name = "datetime";
-            this.datetime.Size = new System.Drawing.Size(200, 25);
+            this.datetime.Size = new System.Drawing.Size(200, 21);
             this.datetime.TabIndex = 38;
             // 
             // kind
@@ -241,7 +245,7 @@ namespace WindowsFormsApp3
             this.number.Location = new System.Drawing.Point(480, 299);
             this.number.Name = "number";
             this.number.PreventEnterBeep = true;
-            this.number.Size = new System.Drawing.Size(100, 25);
+            this.number.Size = new System.Drawing.Size(100, 21);
             this.number.TabIndex = 34;
             // 
             // price
@@ -257,7 +261,7 @@ namespace WindowsFormsApp3
             this.price.Location = new System.Drawing.Point(480, 268);
             this.price.Name = "price";
             this.price.PreventEnterBeep = true;
-            this.price.Size = new System.Drawing.Size(100, 25);
+            this.price.Size = new System.Drawing.Size(100, 21);
             this.price.TabIndex = 33;
             // 
             // publishing
@@ -273,7 +277,7 @@ namespace WindowsFormsApp3
             this.publishing.Location = new System.Drawing.Point(180, 361);
             this.publishing.Name = "publishing";
             this.publishing.PreventEnterBeep = true;
-            this.publishing.Size = new System.Drawing.Size(100, 25);
+            this.publishing.Size = new System.Drawing.Size(100, 21);
             this.publishing.TabIndex = 32;
             // 
             // author
@@ -289,7 +293,7 @@ namespace WindowsFormsApp3
             this.author.Location = new System.Drawing.Point(180, 330);
             this.author.Name = "author";
             this.author.PreventEnterBeep = true;
-            this.author.Size = new System.Drawing.Size(100, 25);
+            this.author.Size = new System.Drawing.Size(100, 21);
             this.author.TabIndex = 31;
             // 
             // bookid
@@ -306,7 +310,7 @@ namespace WindowsFormsApp3
             this.bookid.Location = new System.Drawing.Point(180, 299);
             this.bookid.Name = "bookid";
             this.bookid.PreventEnterBeep = true;
-            this.bookid.Size = new System.Drawing.Size(100, 25);
+            this.bookid.Size = new System.Drawing.Size(100, 21);
             this.bookid.TabIndex = 30;
             // 
             // bookname
@@ -322,7 +326,7 @@ namespace WindowsFormsApp3
             this.bookname.Location = new System.Drawing.Point(180, 268);
             this.bookname.Name = "bookname";
             this.bookname.PreventEnterBeep = true;
-            this.bookname.Size = new System.Drawing.Size(100, 25);
+            this.bookname.Size = new System.Drawing.Size(100, 21);
             this.bookname.TabIndex = 29;
             // 
             // labelX8
@@ -421,9 +425,52 @@ namespace WindowsFormsApp3
             this.labelX1.TabIndex = 21;
             this.labelX1.Text = "书名：";
             // 
+            // labelX11
+            // 
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX11.Location = new System.Drawing.Point(273, 395);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(67, 23);
+            this.labelX11.TabIndex = 64;
+            this.labelX11.Text = "搜索书名：";
+            // 
+            // search_box
+            // 
+            this.search_box.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.search_box.Border.Class = "TextBoxBorder";
+            this.search_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.search_box.DisabledBackColor = System.Drawing.Color.White;
+            this.search_box.ForeColor = System.Drawing.Color.Black;
+            this.search_box.Location = new System.Drawing.Point(340, 397);
+            this.search_box.Name = "search_box";
+            this.search_box.PreventEnterBeep = true;
+            this.search_box.Size = new System.Drawing.Size(100, 21);
+            this.search_box.TabIndex = 63;
+            // 
+            // search
+            // 
+            this.search.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.search.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.search.Location = new System.Drawing.Point(456, 395);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.search.TabIndex = 65;
+            this.search.Text = "搜索";
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
             // update_book_frm
             // 
             this.ClientSize = new System.Drawing.Size(787, 495);
+            this.Controls.Add(this.search);
+            this.Controls.Add(this.labelX11);
+            this.Controls.Add(this.search_box);
             this.Controls.Add(this.listViewEx1);
             this.Controls.Add(this.update_book);
             this.Controls.Add(this.datetime);
@@ -490,5 +537,8 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX labelX11;
+        private DevComponents.DotNetBar.Controls.TextBoxX search_box;
+        private DevComponents.DotNetBar.ButtonX search;
     }
 }

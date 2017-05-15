@@ -49,6 +49,12 @@ namespace WindowsFormsApp3
             if(MessageBoxEx.Show("将要关闭窗体，是否继续？","询问",MessageBoxButtons.YesNo)==DialogResult.Yes)
             {
                 e.Cancel = false;
+                try
+                {
+                    System.Threading.Thread.Sleep(50);
+                    System.Environment.Exit(0);
+                }
+                catch { }
             }
             else
             {
@@ -89,6 +95,11 @@ namespace WindowsFormsApp3
             update_book_frm frm = update_book_frm.getInstance();
             set_child_frm(frm, panel1);
             frm.BringToFront();
+        }
+
+        private void update_book_Click(object sender, EventArgs e)
+        {
+            toolStripButton5_Click(sender, e);
         }
     }
 }
