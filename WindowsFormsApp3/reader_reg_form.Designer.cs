@@ -273,7 +273,7 @@ namespace WindowsFormsApp3
             this.id_kind_box.Name = "id_kind_box";
             this.id_kind_box.Size = new System.Drawing.Size(147, 25);
             this.id_kind_box.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.id_kind_box.TabIndex = 14;
+            this.id_kind_box.TabIndex = 4;
             // 
             // id_card
             // 

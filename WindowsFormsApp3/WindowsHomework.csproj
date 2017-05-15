@@ -59,6 +59,12 @@
     <Compile Include="add_book_frm.Designer.cs">
       <DependentUpon>add_book_frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_reader_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_reader_frm.Designer.cs">
+      <DependentUpon>add_reader_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="delete_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,8 +112,17 @@
     <Compile Include="update_book_frm.Designer.cs">
       <DependentUpon>update_book_frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="update_reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_reader.Designer.cs">
+      <DependentUpon>update_reader.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="add_book_frm.resx">
       <DependentUpon>add_book_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_reader_frm.resx">
+      <DependentUpon>add_reader_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delete_frm.resx">
       <DependentUpon>delete_frm.cs</DependentUpon>
@@ -138,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="update_book_frm.resx">
       <DependentUpon>update_book_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_reader.resx">
+      <DependentUpon>update_reader.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

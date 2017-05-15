@@ -48,7 +48,7 @@ namespace WindowsFormsApp3
             this.Sign_in.Name = "Sign_in";
             this.Sign_in.Size = new System.Drawing.Size(100, 53);
             this.Sign_in.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.Sign_in.TabIndex = 0;
+            this.Sign_in.TabIndex = 3;
             this.Sign_in.Text = "µÇÂ¼";
             this.Sign_in.Click += new System.EventHandler(this.Sign_in_Click);
             // 
@@ -60,7 +60,7 @@ namespace WindowsFormsApp3
             this.Sign_up.Name = "Sign_up";
             this.Sign_up.Size = new System.Drawing.Size(100, 53);
             this.Sign_up.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.Sign_up.TabIndex = 1;
+            this.Sign_up.TabIndex = 4;
             this.Sign_up.Text = "×¢²á";
             this.Sign_up.Click += new System.EventHandler(this.Sign_up_Click);
             // 
@@ -102,7 +102,7 @@ namespace WindowsFormsApp3
             this.userid_box.Name = "userid_box";
             this.userid_box.PreventEnterBeep = true;
             this.userid_box.Size = new System.Drawing.Size(177, 25);
-            this.userid_box.TabIndex = 4;
+            this.userid_box.TabIndex = 0;
             // 
             // userpassword_box
             // 
@@ -119,7 +119,7 @@ namespace WindowsFormsApp3
             this.userpassword_box.PasswordChar = '*';
             this.userpassword_box.PreventEnterBeep = true;
             this.userpassword_box.Size = new System.Drawing.Size(177, 25);
-            this.userpassword_box.TabIndex = 5;
+            this.userpassword_box.TabIndex = 1;
             // 
             // styleManager1
             // 
@@ -133,7 +133,7 @@ namespace WindowsFormsApp3
             this.isManager.Location = new System.Drawing.Point(246, 215);
             this.isManager.Name = "isManager";
             this.isManager.Size = new System.Drawing.Size(89, 19);
-            this.isManager.TabIndex = 6;
+            this.isManager.TabIndex = 2;
             this.isManager.Text = "¹ÜÀíÔ±£¿";
             this.isManager.UseVisualStyleBackColor = true;
             // 

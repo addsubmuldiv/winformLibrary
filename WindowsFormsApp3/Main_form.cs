@@ -86,6 +86,8 @@ namespace WindowsFormsApp3
                 toolStripButton5_Click(sender, e);
             else if (e.Node.Name == "delete_book")
                 toolStripButton2_Click(sender, e);
+            else if (e.Node.Name == "add_reader")
+                toolStripButton3_Click(sender, e);
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -112,6 +114,24 @@ namespace WindowsFormsApp3
         private void delete_book_Click(object sender, EventArgs e)
         {
             toolStripButton2_Click(sender, e);
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            add_reader_frm frm = add_reader_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.read_reader_from_database();
+            frm.BringToFront();
+        }
+
+        private void add_reader_Click(object sender, EventArgs e)
+        {
+            toolStripButton3_Click(sender, e);
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

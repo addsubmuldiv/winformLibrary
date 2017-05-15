@@ -128,7 +128,7 @@ namespace WindowsFormsApp3
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(137, 38);
             this.delete_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.delete_button.TabIndex = 42;
+            this.delete_button.TabIndex = 2;
             this.delete_button.Text = "É¾³ý";
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
@@ -140,7 +140,7 @@ namespace WindowsFormsApp3
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(75, 23);
             this.search.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.search.TabIndex = 68;
+            this.search.TabIndex = 1;
             this.search.Text = "ËÑË÷";
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
@@ -170,7 +170,7 @@ namespace WindowsFormsApp3
             this.search_box.Name = "search_box";
             this.search_box.PreventEnterBeep = true;
             this.search_box.Size = new System.Drawing.Size(100, 25);
-            this.search_box.TabIndex = 66;
+            this.search_box.TabIndex = 0;
             // 
             // delete_frm
             // 

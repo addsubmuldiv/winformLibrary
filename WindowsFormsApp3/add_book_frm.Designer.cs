@@ -150,7 +150,7 @@ namespace WindowsFormsApp3
             this.add_book.Name = "add_book";
             this.add_book.Size = new System.Drawing.Size(137, 38);
             this.add_book.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.add_book.TabIndex = 59;
+            this.add_book.TabIndex = 8;
             this.add_book.Text = "Èë¿â";
             this.add_book.Click += new System.EventHandler(this.add_book_Click);
             // 
@@ -159,7 +159,7 @@ namespace WindowsFormsApp3
             this.datetime.Location = new System.Drawing.Point(480, 361);
             this.datetime.Name = "datetime";
             this.datetime.Size = new System.Drawing.Size(200, 25);
-            this.datetime.TabIndex = 58;
+            this.datetime.TabIndex = 7;
             // 
             // kind
             // 
@@ -191,7 +191,7 @@ namespace WindowsFormsApp3
             this.kind.Name = "kind";
             this.kind.Size = new System.Drawing.Size(121, 25);
             this.kind.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.kind.TabIndex = 57;
+            this.kind.TabIndex = 6;
             // 
             // literature
             // 
@@ -251,7 +251,7 @@ namespace WindowsFormsApp3
             this.number.Name = "number";
             this.number.PreventEnterBeep = true;
             this.number.Size = new System.Drawing.Size(100, 25);
-            this.number.TabIndex = 54;
+            this.number.TabIndex = 5;
             this.number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.number_KeyPress);
             // 
             // price
@@ -268,7 +268,7 @@ namespace WindowsFormsApp3
             this.price.Name = "price";
             this.price.PreventEnterBeep = true;
             this.price.Size = new System.Drawing.Size(100, 25);
-            this.price.TabIndex = 53;
+            this.price.TabIndex = 4;
             this.price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.price_KeyPress);
             // 
             // publishing
@@ -285,7 +285,7 @@ namespace WindowsFormsApp3
             this.publishing.Name = "publishing";
             this.publishing.PreventEnterBeep = true;
             this.publishing.Size = new System.Drawing.Size(100, 25);
-            this.publishing.TabIndex = 52;
+            this.publishing.TabIndex = 3;
             // 
             // author
             // 
@@ -301,7 +301,7 @@ namespace WindowsFormsApp3
             this.author.Name = "author";
             this.author.PreventEnterBeep = true;
             this.author.Size = new System.Drawing.Size(100, 25);
-            this.author.TabIndex = 51;
+            this.author.TabIndex = 2;
             // 
             // bookid
             // 
@@ -317,7 +317,7 @@ namespace WindowsFormsApp3
             this.bookid.Name = "bookid";
             this.bookid.PreventEnterBeep = true;
             this.bookid.Size = new System.Drawing.Size(100, 25);
-            this.bookid.TabIndex = 50;
+            this.bookid.TabIndex = 1;
             this.bookid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bookid_KeyPress);
             // 
             // bookname
@@ -334,7 +334,7 @@ namespace WindowsFormsApp3
             this.bookname.Name = "bookname";
             this.bookname.PreventEnterBeep = true;
             this.bookname.Size = new System.Drawing.Size(100, 25);
-            this.bookname.TabIndex = 49;
+            this.bookname.TabIndex = 0;
             // 
             // labelX8
             // 

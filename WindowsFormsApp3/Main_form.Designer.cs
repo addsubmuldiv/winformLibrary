@@ -30,27 +30,27 @@ namespace WindowsFormsApp3
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_form));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("图书入库");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("删除图书");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("更新图书信息");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("图书管理", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("增加读者");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("删除读者");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("更新读者信息");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("读者管理", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6,
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("增加借阅信息");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("更新借阅信息");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("还书处理");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("借阅管理", new System.Windows.Forms.TreeNode[] {
-            treeNode9,
-            treeNode10,
-            treeNode11});
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("图书入库");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("删除图书");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("更新图书信息");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("图书管理", new System.Windows.Forms.TreeNode[] {
+            treeNode25,
+            treeNode26,
+            treeNode27});
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("增加读者");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("删除读者");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("更新读者信息");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("读者管理", new System.Windows.Forms.TreeNode[] {
+            treeNode29,
+            treeNode30,
+            treeNode31});
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("增加借阅信息");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("更新借阅信息");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("还书处理");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("借阅管理", new System.Windows.Forms.TreeNode[] {
+            treeNode33,
+            treeNode34,
+            treeNode35});
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.add_book = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,21 +114,21 @@ namespace WindowsFormsApp3
             // add_book
             // 
             this.add_book.Name = "add_book";
-            this.add_book.Size = new System.Drawing.Size(181, 26);
+            this.add_book.Size = new System.Drawing.Size(174, 26);
             this.add_book.Text = "图书入库";
             this.add_book.Click += new System.EventHandler(this.add_book_Click);
             // 
             // delete_book
             // 
             this.delete_book.Name = "delete_book";
-            this.delete_book.Size = new System.Drawing.Size(181, 26);
+            this.delete_book.Size = new System.Drawing.Size(174, 26);
             this.delete_book.Text = "删除图书";
             this.delete_book.Click += new System.EventHandler(this.delete_book_Click);
             // 
             // update_book
             // 
             this.update_book.Name = "update_book";
-            this.update_book.Size = new System.Drawing.Size(181, 26);
+            this.update_book.Size = new System.Drawing.Size(174, 26);
             this.update_book.Text = "更新图书信息";
             this.update_book.Click += new System.EventHandler(this.update_book_Click);
             // 
@@ -145,19 +145,20 @@ namespace WindowsFormsApp3
             // add_reader
             // 
             this.add_reader.Name = "add_reader";
-            this.add_reader.Size = new System.Drawing.Size(174, 26);
+            this.add_reader.Size = new System.Drawing.Size(181, 26);
             this.add_reader.Text = "增加读者";
+            this.add_reader.Click += new System.EventHandler(this.add_reader_Click);
             // 
             // delete_reader
             // 
             this.delete_reader.Name = "delete_reader";
-            this.delete_reader.Size = new System.Drawing.Size(174, 26);
+            this.delete_reader.Size = new System.Drawing.Size(181, 26);
             this.delete_reader.Text = "删除读者";
             // 
             // update_reader
             // 
             this.update_reader.Name = "update_reader";
-            this.update_reader.Size = new System.Drawing.Size(174, 26);
+            this.update_reader.Size = new System.Drawing.Size(181, 26);
             this.update_reader.Text = "更新读者信息";
             // 
             // 我的图书馆ToolStripMenuItem
@@ -248,6 +249,7 @@ namespace WindowsFormsApp3
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton3.Text = "添加读者";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
             // 
@@ -266,6 +268,7 @@ namespace WindowsFormsApp3
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton6.Text = "更新读者信息";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // styleManager1
             // 
@@ -330,34 +333,34 @@ namespace WindowsFormsApp3
             | System.Windows.Forms.AnchorStyles.Left)));
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "add_book";
-            treeNode1.Text = "图书入库";
-            treeNode2.Name = "delete_book";
-            treeNode2.Text = "删除图书";
-            treeNode3.Name = "update_book";
-            treeNode3.Text = "更新图书信息";
-            treeNode4.Name = "manage_book";
-            treeNode4.Text = "图书管理";
-            treeNode5.Name = "add_reader";
-            treeNode5.Text = "增加读者";
-            treeNode6.Name = "delete_book";
-            treeNode6.Text = "删除读者";
-            treeNode7.Name = "update_reader";
-            treeNode7.Text = "更新读者信息";
-            treeNode8.Name = "manage_reader";
-            treeNode8.Text = "读者管理";
-            treeNode9.Name = "add_borrow";
-            treeNode9.Text = "增加借阅信息";
-            treeNode10.Name = "update_borrow";
-            treeNode10.Text = "更新借阅信息";
-            treeNode11.Name = "handle_return_item";
-            treeNode11.Text = "还书处理";
-            treeNode12.Name = "manage_borrow";
-            treeNode12.Text = "借阅管理";
+            treeNode25.Name = "add_book";
+            treeNode25.Text = "图书入库";
+            treeNode26.Name = "delete_book";
+            treeNode26.Text = "删除图书";
+            treeNode27.Name = "update_book";
+            treeNode27.Text = "更新图书信息";
+            treeNode28.Name = "manage_book";
+            treeNode28.Text = "图书管理";
+            treeNode29.Name = "add_reader";
+            treeNode29.Text = "增加读者";
+            treeNode30.Name = "delete_book";
+            treeNode30.Text = "删除读者";
+            treeNode31.Name = "update_reader";
+            treeNode31.Text = "更新读者信息";
+            treeNode32.Name = "manage_reader";
+            treeNode32.Text = "读者管理";
+            treeNode33.Name = "add_borrow";
+            treeNode33.Text = "增加借阅信息";
+            treeNode34.Name = "update_borrow";
+            treeNode34.Text = "更新借阅信息";
+            treeNode35.Name = "handle_return_item";
+            treeNode35.Text = "还书处理";
+            treeNode36.Name = "manage_borrow";
+            treeNode36.Text = "借阅管理";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode8,
-            treeNode12});
+            treeNode28,
+            treeNode32,
+            treeNode36});
             this.treeView1.Size = new System.Drawing.Size(170, 538);
             this.treeView1.TabIndex = 3;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
@@ -407,7 +410,7 @@ namespace WindowsFormsApp3
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Main_form";
-            this.Text = "Main_form";
+            this.Text = "管理窗口";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_form_FormClosing);
             this.Load += new System.EventHandler(this.Main_form_Load);
             this.menuStrip1.ResumeLayout(false);

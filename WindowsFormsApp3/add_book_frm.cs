@@ -20,7 +20,7 @@ namespace WindowsFormsApp3
             getSqlConnection getcon = new getSqlConnection();
             sqlcon = getcon.GetCon();
             try { sqlcon.Open(); }
-            catch(Exception ex) { }
+            catch { }
             /*     for(int i=0;i<10;i++)
                  {
                      ListViewItem a = new ListViewItem();
