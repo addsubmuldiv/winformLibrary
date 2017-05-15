@@ -123,6 +123,7 @@ namespace WindowsFormsApp3
             this.delete_book.Name = "delete_book";
             this.delete_book.Size = new System.Drawing.Size(181, 26);
             this.delete_book.Text = "É¾³ýÍ¼Êé";
+            this.delete_book.Click += new System.EventHandler(this.delete_book_Click);
             // 
             // update_book
             // 
@@ -227,6 +228,7 @@ namespace WindowsFormsApp3
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton2.Text = "É¾³ýÍ¼Êé";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton5
             // 

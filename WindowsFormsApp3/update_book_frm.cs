@@ -23,8 +23,9 @@ namespace WindowsFormsApp3
             catch(Exception ex) { }
             read_from_database_to_listview();
         }
-        private void read_from_database_to_listview()
+        public void read_from_database_to_listview()
         {
+            listViewEx1.Items.Clear();
             listViewEx1.BeginUpdate();
             SqlCommand sqlcom = sqlcon.CreateCommand();
             sqlcom.CommandText = "select * from book";
@@ -128,7 +129,7 @@ namespace WindowsFormsApp3
         private void search_Click(object sender, EventArgs e)
         {
             SqlCommand sqlcom = sqlcon.CreateCommand();
-            sqlcom.CommandText = $"select * from book where name like '%{search_box.Text}%'";
+            sqlcom.CommandText = $"select * from book where upper(name) like upper('%{search_box.Text}%')";
             SqlDataReader sqlreader = sqlcom.ExecuteReader();
             listViewEx1.Items.Clear();
             listViewEx1.BeginUpdate();
@@ -147,6 +148,30 @@ namespace WindowsFormsApp3
             }
             sqlreader.Close();
             listViewEx1.EndUpdate();
+        }
+
+        private void bookid_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!Regex_int.IsInt(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!Regex_int.IsInt(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void price_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!Regex_int.IsInt(e.KeyChar.ToString()))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

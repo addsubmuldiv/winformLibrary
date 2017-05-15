@@ -46,15 +46,11 @@ namespace WindowsFormsApp3
         private void Main_form_FormClosing(object sender, FormClosingEventArgs e)
         {
             MessageBoxEx.EnableGlass = false;
-            if(MessageBoxEx.Show("将要关闭窗体，是否继续？","询问",MessageBoxButtons.YesNo)==DialogResult.Yes)
+            if (MessageBoxEx.Show("将要关闭窗体，是否继续？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 e.Cancel = false;
-                try
-                {
-                    System.Threading.Thread.Sleep(50);
-                    System.Environment.Exit(0);
-                }
-                catch { }
+                //System.Threading.Thread.Sleep(100);
+                System.Environment.Exit(0);
             }
             else
             {
@@ -66,6 +62,7 @@ namespace WindowsFormsApp3
         {
             add_book_frm frm = add_book_frm.getInstance();
             set_child_frm(frm, panel1);
+            frm.read_from_database_to_listview();
             frm.BringToFront();
         }
         private void set_child_frm(Form frm,Panel panel)
@@ -87,19 +84,34 @@ namespace WindowsFormsApp3
                 toolStripButton1_Click(sender, e);
             else if (e.Node.Name == "update_book")
                 toolStripButton5_Click(sender, e);
-
+            else if (e.Node.Name == "delete_book")
+                toolStripButton2_Click(sender, e);
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             update_book_frm frm = update_book_frm.getInstance();
             set_child_frm(frm, panel1);
+            frm.read_from_database_to_listview();
             frm.BringToFront();
         }
 
         private void update_book_Click(object sender, EventArgs e)
         {
             toolStripButton5_Click(sender, e);
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            delete_frm frm = delete_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.read_from_database_to_listview();
+            frm.BringToFront();
+        }
+
+        private void delete_book_Click(object sender, EventArgs e)
+        {
+            toolStripButton2_Click(sender, e);
         }
     }
 }

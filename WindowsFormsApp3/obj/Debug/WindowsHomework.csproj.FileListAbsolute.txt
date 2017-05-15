@@ -16,3 +16,4 @@ C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\Windo
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\DevComponents.TreeGX.dll
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.add_book_frm.resources
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.update_book_frm.resources
+C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.delete_frm.resources

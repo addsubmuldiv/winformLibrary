@@ -59,6 +59,12 @@
     <Compile Include="add_book_frm.Designer.cs">
       <DependentUpon>add_book_frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="delete_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_frm.Designer.cs">
+      <DependentUpon>delete_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListViewSorter.cs" />
     <Compile Include="Login_form.cs">
       <SubType>Form</SubType>
@@ -87,6 +93,7 @@
     <Compile Include="reader_reg_form.Designer.cs">
       <DependentUpon>reader_reg_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Regex_int.cs" />
     <Compile Include="Registry_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="add_book_frm.resx">
       <DependentUpon>add_book_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_frm.resx">
+      <DependentUpon>delete_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_form.resx">
       <DependentUpon>Login_form.cs</DependentUpon>

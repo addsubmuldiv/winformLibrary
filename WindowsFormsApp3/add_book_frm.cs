@@ -37,8 +37,9 @@ namespace WindowsFormsApp3
                  }*/
             read_from_database_to_listview();
         }
-        private void read_from_database_to_listview()
+        public void read_from_database_to_listview()
         {
+            listViewEx1.Items.Clear();
             listViewEx1.BeginUpdate();
             SqlCommand sqlcom = sqlcon.CreateCommand();
             sqlcom.CommandText = "select * from book";
@@ -105,7 +106,7 @@ namespace WindowsFormsApp3
 
         private void price_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsLetter(e.KeyChar))
+            if(!Regex_int.IsInt(e.KeyChar.ToString()))
             {
                 e.Handled = true;
             }
@@ -113,7 +114,7 @@ namespace WindowsFormsApp3
 
         private void bookid_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsLetter(e.KeyChar))
+            if(!Regex_int.IsInt(e.KeyChar.ToString()))
             {
                 e.Handled = true;
             }
@@ -121,7 +122,7 @@ namespace WindowsFormsApp3
 
         private void number_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsLetter(e.KeyChar))
+            if(!Regex_int.IsInt(e.KeyChar.ToString()))
             {
                 e.Handled = true;
             }

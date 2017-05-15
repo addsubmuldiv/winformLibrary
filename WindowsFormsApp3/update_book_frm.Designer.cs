@@ -153,7 +153,7 @@ namespace WindowsFormsApp3
             // 
             this.datetime.Location = new System.Drawing.Point(480, 361);
             this.datetime.Name = "datetime";
-            this.datetime.Size = new System.Drawing.Size(200, 21);
+            this.datetime.Size = new System.Drawing.Size(200, 25);
             this.datetime.TabIndex = 38;
             // 
             // kind
@@ -245,8 +245,9 @@ namespace WindowsFormsApp3
             this.number.Location = new System.Drawing.Point(480, 299);
             this.number.Name = "number";
             this.number.PreventEnterBeep = true;
-            this.number.Size = new System.Drawing.Size(100, 21);
+            this.number.Size = new System.Drawing.Size(100, 25);
             this.number.TabIndex = 34;
+            this.number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.number_KeyPress);
             // 
             // price
             // 
@@ -261,8 +262,9 @@ namespace WindowsFormsApp3
             this.price.Location = new System.Drawing.Point(480, 268);
             this.price.Name = "price";
             this.price.PreventEnterBeep = true;
-            this.price.Size = new System.Drawing.Size(100, 21);
+            this.price.Size = new System.Drawing.Size(100, 25);
             this.price.TabIndex = 33;
+            this.price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.price_KeyPress);
             // 
             // publishing
             // 
@@ -277,7 +279,7 @@ namespace WindowsFormsApp3
             this.publishing.Location = new System.Drawing.Point(180, 361);
             this.publishing.Name = "publishing";
             this.publishing.PreventEnterBeep = true;
-            this.publishing.Size = new System.Drawing.Size(100, 21);
+            this.publishing.Size = new System.Drawing.Size(100, 25);
             this.publishing.TabIndex = 32;
             // 
             // author
@@ -293,7 +295,7 @@ namespace WindowsFormsApp3
             this.author.Location = new System.Drawing.Point(180, 330);
             this.author.Name = "author";
             this.author.PreventEnterBeep = true;
-            this.author.Size = new System.Drawing.Size(100, 21);
+            this.author.Size = new System.Drawing.Size(100, 25);
             this.author.TabIndex = 31;
             // 
             // bookid
@@ -310,8 +312,9 @@ namespace WindowsFormsApp3
             this.bookid.Location = new System.Drawing.Point(180, 299);
             this.bookid.Name = "bookid";
             this.bookid.PreventEnterBeep = true;
-            this.bookid.Size = new System.Drawing.Size(100, 21);
+            this.bookid.Size = new System.Drawing.Size(100, 25);
             this.bookid.TabIndex = 30;
+            this.bookid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bookid_KeyPress);
             // 
             // bookname
             // 
@@ -326,7 +329,7 @@ namespace WindowsFormsApp3
             this.bookname.Location = new System.Drawing.Point(180, 268);
             this.bookname.Name = "bookname";
             this.bookname.PreventEnterBeep = true;
-            this.bookname.Size = new System.Drawing.Size(100, 21);
+            this.bookname.Size = new System.Drawing.Size(100, 25);
             this.bookname.TabIndex = 29;
             // 
             // labelX8
@@ -431,9 +434,9 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.Location = new System.Drawing.Point(273, 395);
+            this.labelX11.Location = new System.Drawing.Point(242, 399);
             this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(67, 23);
+            this.labelX11.Size = new System.Drawing.Size(90, 23);
             this.labelX11.TabIndex = 64;
             this.labelX11.Text = "ËÑË÷ÊéÃû£º";
             // 
@@ -447,10 +450,10 @@ namespace WindowsFormsApp3
             this.search_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.search_box.DisabledBackColor = System.Drawing.Color.White;
             this.search_box.ForeColor = System.Drawing.Color.Black;
-            this.search_box.Location = new System.Drawing.Point(340, 397);
+            this.search_box.Location = new System.Drawing.Point(332, 397);
             this.search_box.Name = "search_box";
             this.search_box.PreventEnterBeep = true;
-            this.search_box.Size = new System.Drawing.Size(100, 21);
+            this.search_box.Size = new System.Drawing.Size(100, 25);
             this.search_box.TabIndex = 63;
             // 
             // search
