@@ -88,6 +88,10 @@ namespace WindowsFormsApp3
                 toolStripButton2_Click(sender, e);
             else if (e.Node.Name == "add_reader")
                 toolStripButton3_Click(sender, e);
+            else if (e.Node.Name == "update_reader")
+                toolStripButton6_Click(sender, e);
+            else if(e.Node.Name=="delete_reader")
+                toolStripButton4_Click(sender, e);
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -131,7 +135,36 @@ namespace WindowsFormsApp3
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
+            update_reader_frm frm = update_reader_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.read_reader_from_database();
+            frm.BringToFront();
+        }
 
+        private void update_reader_Click(object sender, EventArgs e)
+        {
+            toolStripButton6_Click(sender, e);
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            delete_reader_frm frm = delete_reader_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.read_reader_from_database();
+            frm.BringToFront();
+        }
+
+        private void delete_reader_Click(object sender, EventArgs e)
+        {
+            toolStripButton4_Click(sender, e);
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            borrow_book_frm frm = borrow_book_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.read_from_database_to_listview();
+            frm.BringToFront();
         }
     }
 }

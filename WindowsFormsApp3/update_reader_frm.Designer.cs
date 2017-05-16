@@ -1,6 +1,6 @@
 namespace WindowsFormsApp3
 {
-    partial class update_reader
+    partial class update_reader_frm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace WindowsFormsApp3
             this.comboItem1 = new DevComponents.Editors.ComboItem();
             this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.dateTime_box = new System.Windows.Forms.DateTimePicker();
-            this.add_reader = new DevComponents.DotNetBar.ButtonX();
+            this.update_reader = new DevComponents.DotNetBar.ButtonX();
             this.id_number_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.phone_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.password_box = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -50,6 +50,9 @@ namespace WindowsFormsApp3
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.search = new DevComponents.DotNetBar.ButtonX();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.search_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.SuspendLayout();
             // 
             // id_kind_box
@@ -83,16 +86,17 @@ namespace WindowsFormsApp3
             this.dateTime_box.Size = new System.Drawing.Size(200, 25);
             this.dateTime_box.TabIndex = 18;
             // 
-            // add_reader
+            // update_reader
             // 
-            this.add_reader.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.add_reader.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.add_reader.Location = new System.Drawing.Point(314, 432);
-            this.add_reader.Name = "add_reader";
-            this.add_reader.Size = new System.Drawing.Size(137, 38);
-            this.add_reader.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.add_reader.TabIndex = 19;
-            this.add_reader.Text = "更新";
+            this.update_reader.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.update_reader.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.update_reader.Location = new System.Drawing.Point(314, 432);
+            this.update_reader.Name = "update_reader";
+            this.update_reader.Size = new System.Drawing.Size(137, 38);
+            this.update_reader.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.update_reader.TabIndex = 19;
+            this.update_reader.Text = "更新";
+            this.update_reader.Click += new System.EventHandler(this.update_reader_Click);
             // 
             // id_number_box
             // 
@@ -125,6 +129,7 @@ namespace WindowsFormsApp3
             this.phone_box.PreventEnterBeep = true;
             this.phone_box.Size = new System.Drawing.Size(100, 25);
             this.phone_box.TabIndex = 15;
+            this.phone_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_box_KeyPress);
             // 
             // password_box
             // 
@@ -176,6 +181,8 @@ namespace WindowsFormsApp3
             this.listView1.TabIndex = 26;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView1_ColumnClick);
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -279,12 +286,55 @@ namespace WindowsFormsApp3
             this.labelX1.TabIndex = 20;
             this.labelX1.Text = "账号：";
             // 
-            // update_reader
+            // search
+            // 
+            this.search.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.search.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.search.Location = new System.Drawing.Point(456, 395);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.search.TabIndex = 66;
+            this.search.Text = "搜索";
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // labelX11
+            // 
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX11.Location = new System.Drawing.Point(242, 399);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(90, 23);
+            this.labelX11.TabIndex = 67;
+            this.labelX11.Text = "搜索书名：";
+            // 
+            // search_box
+            // 
+            this.search_box.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.search_box.Border.Class = "TextBoxBorder";
+            this.search_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.search_box.DisabledBackColor = System.Drawing.Color.White;
+            this.search_box.ForeColor = System.Drawing.Color.Black;
+            this.search_box.Location = new System.Drawing.Point(332, 397);
+            this.search_box.Name = "search_box";
+            this.search_box.PreventEnterBeep = true;
+            this.search_box.Size = new System.Drawing.Size(100, 25);
+            this.search_box.TabIndex = 65;
+            // 
+            // update_reader_frm
             // 
             this.ClientSize = new System.Drawing.Size(787, 495);
+            this.Controls.Add(this.search);
+            this.Controls.Add(this.labelX11);
+            this.Controls.Add(this.search_box);
             this.Controls.Add(this.id_kind_box);
             this.Controls.Add(this.dateTime_box);
-            this.Controls.Add(this.add_reader);
+            this.Controls.Add(this.update_reader);
             this.Controls.Add(this.id_number_box);
             this.Controls.Add(this.phone_box);
             this.Controls.Add(this.password_box);
@@ -299,8 +349,8 @@ namespace WindowsFormsApp3
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "update_reader";
-            this.Text = "update_reader";
+            this.Name = "update_reader_frm";
+            this.Text = "update_reader_frm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
@@ -312,7 +362,7 @@ namespace WindowsFormsApp3
         private DevComponents.Editors.ComboItem comboItem1;
         private DevComponents.Editors.ComboItem comboItem2;
         private System.Windows.Forms.DateTimePicker dateTime_box;
-        private DevComponents.DotNetBar.ButtonX add_reader;
+        private DevComponents.DotNetBar.ButtonX update_reader;
         private DevComponents.DotNetBar.Controls.TextBoxX id_number_box;
         private DevComponents.DotNetBar.Controls.TextBoxX phone_box;
         private DevComponents.DotNetBar.Controls.TextBoxX password_box;
@@ -330,5 +380,8 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.ButtonX search;
+        private DevComponents.DotNetBar.LabelX labelX11;
+        private DevComponents.DotNetBar.Controls.TextBoxX search_box;
     }
 }
