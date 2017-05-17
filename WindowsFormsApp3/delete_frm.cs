@@ -71,9 +71,23 @@ namespace WindowsFormsApp3
 
         private void search_Click(object sender, EventArgs e)
         {
+            string a = "";
+            switch (comboBoxEx1.SelectedIndex)
+            {
+                case 0: a = "name"; break;
+                case 1: a = "author"; break;
+                case 2: a = "bookId"; break;
+                case 3: a = "kind"; break;
+                default: break;
+            }
             SqlCommand sqlcom = sqlcon.CreateCommand();
-            sqlcom.CommandText = $"select * from book where upper(name) like upper('%{search_box.Text}%')";
+            sqlcom.CommandText = $"select * from book where upper({a}) like upper('%{search_box.Text}%')";
             SqlDataReader sqlreader = sqlcom.ExecuteReader();
+
+
+          /*  SqlCommand sqlcom = sqlcon.CreateCommand();
+            sqlcom.CommandText = $"select * from book where upper(name) like upper('%{search_box.Text}%')";
+            SqlDataReader sqlreader = sqlcom.ExecuteReader();*/
             listViewEx1.Items.Clear();
             listViewEx1.BeginUpdate();
             while (sqlreader.Read())
@@ -98,18 +112,18 @@ namespace WindowsFormsApp3
             MessageBoxEx.EnableGlass = false;
             int count = 0,temp;
             SqlCommand sqlcom = sqlcon.CreateCommand();
-            temp = listViewEx1.SelectedItems.Count;
-            if(listViewEx1.SelectedItems.Count!=0)
+            temp = listViewEx1.CheckedItems.Count;
+            if(listViewEx1.CheckedItems.Count!=0)
             {
-                if (!(MessageBoxEx.Show($"确认删除这{listViewEx1.SelectedItems.Count}项？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes))
+                if (!(MessageBoxEx.Show($"确认删除这{listViewEx1.CheckedItems.Count}项？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes))
                 {
                     return;
                 }
-                for(int i=0;i<listViewEx1.SelectedItems.Count;i++)
+                for(int i=0;i<listViewEx1.CheckedItems.Count;i++)
                 {
-                    if(listViewEx1.SelectedItems[i].Selected)
+                    if(listViewEx1.CheckedItems[i].Checked)
                     {
-                        sqlcom.CommandText = $"delete from book where name='{listViewEx1.SelectedItems[i].Text}' and bookId={listViewEx1.SelectedItems[i].SubItems[1].Text}";
+                        sqlcom.CommandText = $"delete from book where name='{listViewEx1.CheckedItems[i].Text}' and bookId={listViewEx1.CheckedItems[i].SubItems[1].Text}";
                         int flag = sqlcom.ExecuteNonQuery();
                         if(flag==1)
                         {

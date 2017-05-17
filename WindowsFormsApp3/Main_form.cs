@@ -92,6 +92,8 @@ namespace WindowsFormsApp3
                 toolStripButton6_Click(sender, e);
             else if(e.Node.Name=="delete_reader")
                 toolStripButton4_Click(sender, e);
+            else if(e.Node.Name=="add_borrow")
+                toolStripButton7_Click(sender, e);
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -164,6 +166,19 @@ namespace WindowsFormsApp3
             borrow_book_frm frm = borrow_book_frm.getInstance();
             set_child_frm(frm, panel1);
             frm.read_from_database_to_listview();
+            frm.BringToFront();
+        }
+
+        private void add_borrow_Click(object sender, EventArgs e)
+        {
+            toolStripButton7_Click(sender, e);
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            return_handle_frm frm = return_handle_frm.getInstance();
+            set_child_frm(frm, panel1);
+            frm.read_borrow_from_database();
             frm.BringToFront();
         }
     }

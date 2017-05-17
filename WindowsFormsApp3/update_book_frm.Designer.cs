@@ -65,6 +65,12 @@ namespace WindowsFormsApp3
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.search_box = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.search = new DevComponents.DotNetBar.ButtonX();
+            this.labelX12 = new DevComponents.DotNetBar.LabelX();
+            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.name = new DevComponents.Editors.ComboItem();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
+            this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.SuspendLayout();
             // 
             // listViewEx1
@@ -434,11 +440,11 @@ namespace WindowsFormsApp3
             // 
             // 
             this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.Location = new System.Drawing.Point(242, 399);
+            this.labelX11.Location = new System.Drawing.Point(278, 399);
             this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(90, 23);
+            this.labelX11.Size = new System.Drawing.Size(53, 23);
             this.labelX11.TabIndex = 64;
-            this.labelX11.Text = "搜索书名：";
+            this.labelX11.Text = "搜索：";
             // 
             // search_box
             // 
@@ -468,9 +474,59 @@ namespace WindowsFormsApp3
             this.search.Text = "搜索";
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
+            // labelX12
+            // 
+            // 
+            // 
+            // 
+            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX12.Location = new System.Drawing.Point(180, 399);
+            this.labelX12.Name = "labelX12";
+            this.labelX12.Size = new System.Drawing.Size(25, 23);
+            this.labelX12.TabIndex = 72;
+            this.labelX12.Text = "按";
+            // 
+            // comboBoxEx1
+            // 
+            this.comboBoxEx1.DisplayMember = "Text";
+            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEx1.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxEx1.FormattingEnabled = true;
+            this.comboBoxEx1.ItemHeight = 20;
+            this.comboBoxEx1.Items.AddRange(new object[] {
+            this.name,
+            this.comboItem1,
+            this.comboItem2,
+            this.comboItem3});
+            this.comboBoxEx1.Location = new System.Drawing.Point(211, 395);
+            this.comboBoxEx1.Name = "comboBoxEx1";
+            this.comboBoxEx1.Size = new System.Drawing.Size(61, 26);
+            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.comboBoxEx1.TabIndex = 71;
+            this.comboBoxEx1.SelectedIndex = 0;
+            // 
+            // name
+            // 
+            this.name.Text = "书名";
+            // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "作者";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "书号";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "种类";
+            // 
             // update_book_frm
             // 
             this.ClientSize = new System.Drawing.Size(787, 495);
+            this.Controls.Add(this.labelX12);
+            this.Controls.Add(this.comboBoxEx1);
             this.Controls.Add(this.search);
             this.Controls.Add(this.labelX11);
             this.Controls.Add(this.search_box);
@@ -543,5 +599,11 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.Controls.TextBoxX search_box;
         private DevComponents.DotNetBar.ButtonX search;
+        private DevComponents.DotNetBar.LabelX labelX12;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
+        private DevComponents.Editors.ComboItem name;
+        private DevComponents.Editors.ComboItem comboItem1;
+        private DevComponents.Editors.ComboItem comboItem2;
+        private DevComponents.Editors.ComboItem comboItem3;
     }
 }

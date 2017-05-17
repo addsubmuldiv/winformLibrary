@@ -118,6 +118,12 @@
     <Compile Include="Registry_form.Designer.cs">
       <DependentUpon>Registry_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="return_handle_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="return_handle_frm.Designer.cs">
+      <DependentUpon>return_handle_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="update_book_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registry_form.resx">
       <DependentUpon>Registry_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="return_handle_frm.resx">
+      <DependentUpon>return_handle_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="update_book_frm.resx">
       <DependentUpon>update_book_frm.cs</DependentUpon>

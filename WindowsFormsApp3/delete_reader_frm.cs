@@ -68,18 +68,18 @@ namespace WindowsFormsApp3
             MessageBoxEx.EnableGlass = false;
             int count = 0, temp;
             SqlCommand sqlcom = sqlcon.CreateCommand();
-            temp = listView1.SelectedItems.Count;
-            if (listView1.SelectedItems.Count != 0)
+            temp = listView1.CheckedItems.Count;
+            if (listView1.CheckedItems.Count != 0)
             {
-                if (!(MessageBoxEx.Show($"确认删除这{listView1.SelectedItems.Count}项？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes))
+                if (!(MessageBoxEx.Show($"确认删除这{listView1.CheckedItems.Count}项？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes))
                 {
                     return;
                 }
-                for (int i = 0; i < listView1.SelectedItems.Count; i++)
+                for (int i = 0; i < listView1.CheckedItems.Count; i++)
                 {
-                    if (listView1.SelectedItems[i].Selected)
+                    if (listView1.CheckedItems[i].Checked)
                     {
-                        sqlcom.CommandText = $"delete from reader where readerId='{listView1.SelectedItems[i].Text}' and readerPassword={listView1.SelectedItems[i].SubItems[1].Text}";
+                        sqlcom.CommandText = $"delete from reader where readerId='{listView1.CheckedItems[i].Text}' and readerPassword={listView1.CheckedItems[i].SubItems[1].Text}";
                         int flag = sqlcom.ExecuteNonQuery();
                         if (flag == 1)
                         {

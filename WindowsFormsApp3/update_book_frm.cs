@@ -128,9 +128,26 @@ namespace WindowsFormsApp3
 
         private void search_Click(object sender, EventArgs e)
         {
+
+            string a = "";
+            switch (comboBoxEx1.SelectedIndex)
+            {
+                case 0: a = "name"; break;
+                case 1: a = "author"; break;
+                case 2: a = "bookId"; break;
+                case 3: a = "kind"; break;
+                default: break;
+            }
             SqlCommand sqlcom = sqlcon.CreateCommand();
-            sqlcom.CommandText = $"select * from book where upper(name) like upper('%{search_box.Text}%')";
+            sqlcom.CommandText = $"select * from book where upper({a}) like upper('%{search_box.Text}%')";
             SqlDataReader sqlreader = sqlcom.ExecuteReader();
+
+
+
+
+         /*   SqlCommand sqlcom = sqlcon.CreateCommand();
+            sqlcom.CommandText = $"select * from book where upper(name) like upper('%{search_box.Text}%')";
+            SqlDataReader sqlreader = sqlcom.ExecuteReader();*/
             listViewEx1.Items.Clear();
             listViewEx1.BeginUpdate();
             while (sqlreader.Read())

@@ -308,7 +308,7 @@ namespace WindowsFormsApp3
             this.labelX11.Name = "labelX11";
             this.labelX11.Size = new System.Drawing.Size(90, 23);
             this.labelX11.TabIndex = 67;
-            this.labelX11.Text = "ËÑË÷ÊéÃû£º";
+            this.labelX11.Text = "ËÑË÷¶ÁÕß£º";
             // 
             // search_box
             // 
