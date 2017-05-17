@@ -11,6 +11,14 @@ namespace WindowsFormsApp3
 {
     public partial class Main_form : DevComponents.DotNetBar.OfficeForm
     {
+        private System.Threading.Thread Timethread;
+        private string userid;
+        public string Userid
+        {
+            set { userid = value; }
+            get { return userid; }
+        }
+
         public Main_form()
         {
             InitializeComponent();
@@ -18,7 +26,7 @@ namespace WindowsFormsApp3
 
         private void Main_form_Load(object sender, EventArgs e)
         {
-            System.Threading.Thread Timethread = new System.Threading.Thread
+                Timethread = new System.Threading.Thread
                 (
                 () =>
                 {
@@ -45,11 +53,12 @@ namespace WindowsFormsApp3
 
         private void Main_form_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Timethread.Abort();
             MessageBoxEx.EnableGlass = false;
             if (MessageBoxEx.Show("将要关闭窗体，是否继续？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 e.Cancel = false;
-                //System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(100);
                 System.Environment.Exit(0);
             }
             else
@@ -187,6 +196,14 @@ namespace WindowsFormsApp3
         private void return_handle_Click(object sender, EventArgs e)
         {
             toolStripButton8_Click(sender, e);
+        }
+
+        private void change_password_item_Click(object sender, EventArgs e)
+        {
+            change_password frm = change_password.getInstance();
+            frm.Userid = this.Userid;
+            frm.Show();
+            frm.BringToFront();
         }
     }
 }

@@ -57,8 +57,16 @@ namespace WindowsFormsApp3
                 this.Hide();
                 if (isManager.Checked)
                 {
-                    Form mainfrm = new Main_form();
+                    Main_form mainfrm = new Main_form();
+                    mainfrm.Userid = userid_box.Text;
                     mainfrm.Show();
+                }
+                else
+                {
+                    reader_form frm = new reader_form();
+                    frm.userid = userid_box.Text;
+                    frm.userpassword = userpassword_box.Text;
+                    frm.Show();
                 }
             }
             else

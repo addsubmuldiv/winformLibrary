@@ -74,6 +74,12 @@
     <Compile Include="borrow_book_frm.Designer.cs">
       <DependentUpon>borrow_book_frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="change_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_password.Designer.cs">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </Compile>
     <Compile Include="delete_frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="borrow_book_frm.resx">
       <DependentUpon>borrow_book_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_password.resx">
+      <DependentUpon>change_password.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delete_frm.resx">
       <DependentUpon>delete_frm.cs</DependentUpon>

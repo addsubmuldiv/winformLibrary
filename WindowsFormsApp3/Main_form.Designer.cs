@@ -61,6 +61,8 @@ namespace WindowsFormsApp3
             this.我的图书馆ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.add_borrow = new System.Windows.Forms.ToolStripMenuItem();
             this.return_handle = new System.Windows.Forms.ToolStripMenuItem();
+            this.选项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.change_password_item = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -80,8 +82,6 @@ namespace WindowsFormsApp3
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.选项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.更改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panelEx1.SuspendLayout();
@@ -175,16 +175,31 @@ namespace WindowsFormsApp3
             // add_borrow
             // 
             this.add_borrow.Name = "add_borrow";
-            this.add_borrow.Size = new System.Drawing.Size(181, 26);
+            this.add_borrow.Size = new System.Drawing.Size(174, 26);
             this.add_borrow.Text = "增加借阅信息";
             this.add_borrow.Click += new System.EventHandler(this.add_borrow_Click);
             // 
             // return_handle
             // 
             this.return_handle.Name = "return_handle";
-            this.return_handle.Size = new System.Drawing.Size(181, 26);
+            this.return_handle.Size = new System.Drawing.Size(174, 26);
             this.return_handle.Text = "还书处理";
             this.return_handle.Click += new System.EventHandler(this.return_handle_Click);
+            // 
+            // 选项ToolStripMenuItem
+            // 
+            this.选项ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.change_password_item});
+            this.选项ToolStripMenuItem.Name = "选项ToolStripMenuItem";
+            this.选项ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.选项ToolStripMenuItem.Text = "选项";
+            // 
+            // change_password_item
+            // 
+            this.change_password_item.Name = "change_password_item";
+            this.change_password_item.Size = new System.Drawing.Size(181, 26);
+            this.change_password_item.Text = "更改密码";
+            this.change_password_item.Click += new System.EventHandler(this.change_password_item_Click);
             // 
             // toolStrip1
             // 
@@ -407,20 +422,6 @@ namespace WindowsFormsApp3
             this.panel1.Size = new System.Drawing.Size(802, 538);
             this.panel1.TabIndex = 9;
             // 
-            // 选项ToolStripMenuItem
-            // 
-            this.选项ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.更改密码ToolStripMenuItem});
-            this.选项ToolStripMenuItem.Name = "选项ToolStripMenuItem";
-            this.选项ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.选项ToolStripMenuItem.Text = "选项";
-            // 
-            // 更改密码ToolStripMenuItem
-            // 
-            this.更改密码ToolStripMenuItem.Name = "更改密码ToolStripMenuItem";
-            this.更改密码ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.更改密码ToolStripMenuItem.Text = "更改密码";
-            // 
             // Main_form
             // 
             this.ClientSize = new System.Drawing.Size(972, 624);
@@ -483,6 +484,6 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.ToolStripButton toolStripButton7;
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Windows.Forms.ToolStripMenuItem 选项ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 更改密码ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem change_password_item;
     }
 }
