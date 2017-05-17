@@ -53,6 +53,7 @@ namespace WindowsFormsApp3
             this.search = new DevComponents.DotNetBar.ButtonX();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.search_box = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.Excel_button = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // id_kind_box
@@ -326,9 +327,22 @@ namespace WindowsFormsApp3
             this.search_box.Size = new System.Drawing.Size(100, 25);
             this.search_box.TabIndex = 65;
             // 
+            // Excel_button
+            // 
+            this.Excel_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Excel_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Excel_button.Location = new System.Drawing.Point(639, 259);
+            this.Excel_button.Name = "Excel_button";
+            this.Excel_button.Size = new System.Drawing.Size(95, 36);
+            this.Excel_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.Excel_button.TabIndex = 74;
+            this.Excel_button.Text = "µ¼³öµ½Excel";
+            this.Excel_button.Click += new System.EventHandler(this.Excel_button_Click);
+            // 
             // update_reader_frm
             // 
             this.ClientSize = new System.Drawing.Size(787, 495);
+            this.Controls.Add(this.Excel_button);
             this.Controls.Add(this.search);
             this.Controls.Add(this.labelX11);
             this.Controls.Add(this.search_box);
@@ -383,5 +397,6 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.ButtonX search;
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.Controls.TextBoxX search_box;
+        private DevComponents.DotNetBar.ButtonX Excel_button;
     }
 }

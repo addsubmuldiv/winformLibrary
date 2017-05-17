@@ -71,6 +71,7 @@ namespace WindowsFormsApp3
             this.comboItem1 = new DevComponents.Editors.ComboItem();
             this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.comboItem3 = new DevComponents.Editors.ComboItem();
+            this.Excel_button = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // listViewEx1
@@ -504,7 +505,6 @@ namespace WindowsFormsApp3
             this.comboBoxEx1.Size = new System.Drawing.Size(61, 26);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx1.TabIndex = 71;
-            this.comboBoxEx1.SelectedIndex = 0;
             // 
             // name
             // 
@@ -522,9 +522,22 @@ namespace WindowsFormsApp3
             // 
             this.comboItem3.Text = "种类";
             // 
+            // Excel_button
+            // 
+            this.Excel_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Excel_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Excel_button.Location = new System.Drawing.Point(639, 259);
+            this.Excel_button.Name = "Excel_button";
+            this.Excel_button.Size = new System.Drawing.Size(95, 36);
+            this.Excel_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.Excel_button.TabIndex = 73;
+            this.Excel_button.Text = "导出到Excel";
+            this.Excel_button.Click += new System.EventHandler(this.Excel_button_Click);
+            // 
             // update_book_frm
             // 
             this.ClientSize = new System.Drawing.Size(787, 495);
+            this.Controls.Add(this.Excel_button);
             this.Controls.Add(this.labelX12);
             this.Controls.Add(this.comboBoxEx1);
             this.Controls.Add(this.search);
@@ -605,5 +618,6 @@ namespace WindowsFormsApp3
         private DevComponents.Editors.ComboItem comboItem1;
         private DevComponents.Editors.ComboItem comboItem2;
         private DevComponents.Editors.ComboItem comboItem3;
+        private DevComponents.DotNetBar.ButtonX Excel_button;
     }
 }

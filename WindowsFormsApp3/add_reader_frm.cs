@@ -52,6 +52,22 @@ namespace WindowsFormsApp3
         private void add_reader_Click(object sender, EventArgs e)
         {
             MessageBoxEx.EnableGlass = false;
+            if (
+                readerid_box.Text == "" ||
+                password_box.Text == "" ||
+                phone_box.Text == "" ||
+                id_kind_box.Text == "" ||
+                id_number_box.Text == ""
+                )
+            {
+                MessageBoxEx.Show("账户信息不可为空!");
+                return;
+            }   
+
+
+
+
+            MessageBoxEx.EnableGlass = false;
             SqlCommand sqlcom = sqlcon.CreateCommand();
 
             sqlcom.CommandText = $"select count(*) from reader where readerId='{readerid_box.Text}'";

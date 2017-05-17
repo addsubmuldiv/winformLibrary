@@ -42,11 +42,13 @@ namespace WindowsFormsApp3
             this.search = new DevComponents.DotNetBar.ButtonX();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.search_box = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.return_button = new DevComponents.DotNetBar.ButtonX();
+            this.Excel_button = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -54,6 +56,7 @@ namespace WindowsFormsApp3
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(53, 22);
             this.listView1.Name = "listView1";
@@ -124,7 +127,7 @@ namespace WindowsFormsApp3
             // 
             // name
             // 
-            this.name.Text = "书名";
+            this.name.Text = "书号";
             // 
             // comboItem1
             // 
@@ -170,22 +173,35 @@ namespace WindowsFormsApp3
             this.search_box.Size = new System.Drawing.Size(100, 25);
             this.search_box.TabIndex = 73;
             // 
-            // buttonX1
+            // return_button
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(314, 432);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(137, 38);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 78;
-            this.buttonX1.Text = "归还";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            this.return_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.return_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.return_button.Location = new System.Drawing.Point(314, 432);
+            this.return_button.Name = "return_button";
+            this.return_button.Size = new System.Drawing.Size(137, 38);
+            this.return_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.return_button.TabIndex = 78;
+            this.return_button.Text = "归还";
+            this.return_button.Click += new System.EventHandler(this.return_button_Click);
+            // 
+            // Excel_button
+            // 
+            this.Excel_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Excel_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Excel_button.Location = new System.Drawing.Point(639, 348);
+            this.Excel_button.Name = "Excel_button";
+            this.Excel_button.Size = new System.Drawing.Size(95, 36);
+            this.Excel_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.Excel_button.TabIndex = 79;
+            this.Excel_button.Text = "导出到Excel";
+            this.Excel_button.Click += new System.EventHandler(this.Excel_button_Click);
             // 
             // return_handle_frm
             // 
             this.ClientSize = new System.Drawing.Size(787, 495);
-            this.Controls.Add(this.buttonX1);
+            this.Controls.Add(this.Excel_button);
+            this.Controls.Add(this.return_button);
             this.Controls.Add(this.labelX12);
             this.Controls.Add(this.comboBoxEx1);
             this.Controls.Add(this.search);
@@ -217,6 +233,7 @@ namespace WindowsFormsApp3
         private DevComponents.DotNetBar.ButtonX search;
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.Controls.TextBoxX search_box;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX return_button;
+        private DevComponents.DotNetBar.ButtonX Excel_button;
     }
 }

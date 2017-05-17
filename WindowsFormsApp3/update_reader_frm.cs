@@ -120,5 +120,27 @@ namespace WindowsFormsApp3
             sqlreader.Close();
             listView1.EndUpdate();
         }
+
+        private void Excel_button_Click(object sender, EventArgs e)
+        {
+            if (listView1.Items.Count == 0)
+                return;
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            excel.Application.Workbooks.Add(true);
+            excel.Visible = true;
+
+            for (int i = 0; i < listView1.Columns.Count; i++)
+            {
+                excel.Cells[1, i + 1] = listView1.Columns[i].Text;
+            }
+
+            for (int i = 0; i < listView1.Items.Count; i++)
+            {
+                for (int j = 0; j < listView1.Columns.Count; j++)
+                {
+                    excel.Cells[i + 2, j + 1] = "" + listView1.Items[i].SubItems[j].Text;
+                }
+            }
+        }
     }
 }

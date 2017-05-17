@@ -94,6 +94,8 @@ namespace WindowsFormsApp3
                 toolStripButton4_Click(sender, e);
             else if(e.Node.Name=="add_borrow")
                 toolStripButton7_Click(sender, e);
+            else
+                toolStripButton8_Click(sender, e);
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -180,6 +182,11 @@ namespace WindowsFormsApp3
             set_child_frm(frm, panel1);
             frm.read_borrow_from_database();
             frm.BringToFront();
+        }
+
+        private void return_handle_Click(object sender, EventArgs e)
+        {
+            toolStripButton8_Click(sender, e);
         }
     }
 }

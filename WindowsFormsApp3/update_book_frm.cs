@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using System.Data.SqlClient;
+using Microsoft.Office.Interop.Excel;
 namespace WindowsFormsApp3
 {
     public partial class update_book_frm : DevComponents.DotNetBar.OfficeForm
@@ -188,6 +189,28 @@ namespace WindowsFormsApp3
             if(!Regex_int.IsInt(e.KeyChar.ToString()))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void Excel_button_Click(object sender, EventArgs e)
+        {
+            if (listViewEx1.Items.Count == 0)
+                return;
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            excel.Application.Workbooks.Add(true);
+            excel.Visible = true;
+
+            for(int i=0;i<listViewEx1.Columns.Count;i++)
+            {
+                excel.Cells[1, i + 1] = listViewEx1.Columns[i].Text;
+            }
+
+            for(int i=0;i<listViewEx1.Items.Count;i++)
+            {
+                for(int j=0;j<listViewEx1.Columns.Count;j++)
+                {
+                    excel.Cells[i + 2, j + 1] = "" + listViewEx1.Items[i].SubItems[j].Text;
+                }
             }
         }
     }

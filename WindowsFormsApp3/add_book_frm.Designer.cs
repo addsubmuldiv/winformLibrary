@@ -461,7 +461,7 @@ namespace WindowsFormsApp3
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "add_book_frm";
-            this.Text = "Form2";
+            this.Text = "       ";
             this.ResumeLayout(false);
 
         }
