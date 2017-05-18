@@ -136,6 +136,7 @@ namespace WindowsFormsApp3
             for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 excel.Cells[1, i + 1] = listView1.Columns[i].Text;
+                excel.Columns.AutoFit();
             }
 
             for (int i = 0; i < listView1.Items.Count; i++)
@@ -143,6 +144,7 @@ namespace WindowsFormsApp3
                 for (int j = 0; j < listView1.Columns.Count; j++)
                 {
                     excel.Cells[i + 2, j + 1] = "" + listView1.Items[i].SubItems[j].Text;
+                    excel.Columns.AutoFit();
                 }
             }
         }
