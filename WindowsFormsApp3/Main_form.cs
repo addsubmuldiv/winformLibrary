@@ -103,7 +103,7 @@ namespace WindowsFormsApp3
                 toolStripButton4_Click(sender, e);
             else if(e.Node.Name=="add_borrow")
                 toolStripButton7_Click(sender, e);
-            else
+            else if(e.Node.Name== "handle_return_item")
                 toolStripButton8_Click(sender, e);
         }
 
@@ -200,7 +200,7 @@ namespace WindowsFormsApp3
 
         private void change_password_item_Click(object sender, EventArgs e)
         {
-            change_password frm = change_password.getInstance();
+            change_password frm = new change_password();
             frm.Userid = this.Userid;
             frm.Show();
             frm.BringToFront();

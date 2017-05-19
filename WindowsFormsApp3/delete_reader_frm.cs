@@ -79,7 +79,7 @@ namespace WindowsFormsApp3
                 {
                     if (listView1.CheckedItems[i].Checked)
                     {
-                        sqlcom.CommandText = $"delete from reader where readerId='{listView1.CheckedItems[i].Text}' and readerPassword={listView1.CheckedItems[i].SubItems[1].Text}";
+                        sqlcom.CommandText = $"delete from reader where readerId='{listView1.CheckedItems[i].Text}'";
                         int flag = sqlcom.ExecuteNonQuery();
                         if (flag == 1)
                         {

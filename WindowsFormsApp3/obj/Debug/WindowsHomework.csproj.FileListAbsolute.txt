@@ -23,3 +23,28 @@ C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\Windo
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.borrow_book_frm.resources
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.return_handle_frm.resources
 C:\Users\Lighters_c\Documents\Visual Studio 2017\Projects\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.change_password.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsHomework.csprojResolveAssemblyReference.cache
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.add_book_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.add_reader_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.borrow_book_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.change_password.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.delete_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.delete_reader_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Login_Form.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Main_form.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.reader_form.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.reader_reg_form.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Registry_form.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.return_handle_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.update_book_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.update_reader_frm.resources
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsHomework.csproj.GenerateResource.Cache
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Lighters_c\Source\Repos\winformLibrary\WindowsFormsApp3\bin\Debug\DevComponents.DotNetBar2.xml

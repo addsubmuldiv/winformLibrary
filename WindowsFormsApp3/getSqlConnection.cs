@@ -8,7 +8,7 @@ namespace WindowsFormsApp3
 {
     public class getSqlConnection
     {
-        String connection_str = "Data Source=DESKTOP-NTH782M;database=BooksInfo;uid=sa;pwd=Cloud19970613";
+        String connection_str = "Data Source=DESKTOP-RSHU6JN;database=BooksInfo;uid=sa;pwd=Cloud19970613";
         SqlConnection sqlcon;
         public SqlConnection GetCon()
         {

@@ -155,6 +155,7 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "change_password";
             this.Text = "change_password";
             this.ResumeLayout(false);

@@ -17,17 +17,17 @@ namespace WindowsFormsApp3
             set { userid = value; }
             get { return userid; }
         }
-        private static change_password uniqueInstance;
-        private change_password()
+      //  private static change_password uniqueInstance;
+        public change_password()
         {
             InitializeComponent();
         }
-        public static change_password getInstance()
+    /*    public static change_password getInstance()
         {
             if (uniqueInstance == null)
                 uniqueInstance = new change_password();
             return uniqueInstance;
-        }
+        }*/
 
         private void change_btn_Click(object sender, EventArgs e)
         {
