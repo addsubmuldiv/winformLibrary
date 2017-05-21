@@ -113,6 +113,12 @@ namespace WindowsFormsApp3
             int count = 0,temp;
             SqlCommand sqlcom = sqlcon.CreateCommand();
             temp = listViewEx1.CheckedItems.Count;
+
+            if (listViewEx1.CheckedItems.Count == 0)
+            {
+                MessageBoxEx.Show("请勾选要删除的条目!");
+                return;
+            }
             if(listViewEx1.CheckedItems.Count!=0)
             {
                 if (!(MessageBoxEx.Show($"确认删除这{listViewEx1.CheckedItems.Count}项？", "询问", MessageBoxButtons.YesNo) == DialogResult.Yes))

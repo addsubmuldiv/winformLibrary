@@ -34,6 +34,9 @@
   <PropertyGroup>
     <ApplicationIcon>20170514121014910_easyicon_net_32.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WindowsFormsApp3.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
@@ -177,6 +180,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="reader_form.resx">
       <DependentUpon>reader_form.cs</DependentUpon>
@@ -211,6 +215,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="20170514121014910_easyicon_net_32.ico" />
+    <Content Include="Resources\20170514121014910_easyicon_net_32.ico" />
+    <None Include="Resources\books.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

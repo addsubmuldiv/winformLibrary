@@ -113,7 +113,7 @@ namespace WindowsFormsApp3
             this.reg_id.Location = new System.Drawing.Point(125, 34);
             this.reg_id.Name = "reg_id";
             this.reg_id.PreventEnterBeep = true;
-            this.reg_id.Size = new System.Drawing.Size(177, 25);
+            this.reg_id.Size = new System.Drawing.Size(177, 21);
             this.reg_id.TabIndex = 0;
             // 
             // labelX4
@@ -132,9 +132,9 @@ namespace WindowsFormsApp3
             // 
             this.registry_button.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.registry_button.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.registry_button.Location = new System.Drawing.Point(97, 273);
+            this.registry_button.Location = new System.Drawing.Point(125, 301);
             this.registry_button.Name = "registry_button";
-            this.registry_button.Size = new System.Drawing.Size(180, 70);
+            this.registry_button.Size = new System.Drawing.Size(137, 42);
             this.registry_button.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.registry_button.TabIndex = 4;
             this.registry_button.Text = "зЂВс";

@@ -100,6 +100,11 @@ namespace WindowsFormsApp3
         {
             int count = 0;
             MessageBoxEx.EnableGlass = false;
+            if (listView1.CheckedItems.Count == 0)
+            {
+                MessageBoxEx.Show("请勾选要归还的条目!");
+                return;
+            }
             if (listView1.CheckedItems.Count != 0)
             {
                 SqlCommand sqlcom = sqlcon.CreateCommand();

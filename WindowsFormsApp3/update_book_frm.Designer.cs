@@ -505,6 +505,7 @@ namespace WindowsFormsApp3
             this.comboBoxEx1.Size = new System.Drawing.Size(61, 26);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx1.TabIndex = 71;
+            this.comboBoxEx1.SelectedIndex = 0;
             // 
             // name
             // 

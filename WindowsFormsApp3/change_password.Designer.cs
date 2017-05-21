@@ -157,7 +157,8 @@ namespace WindowsFormsApp3
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "change_password";
-            this.Text = "change_password";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "¸ü¸ÄÃÜÂë";
             this.ResumeLayout(false);
 
         }

@@ -52,6 +52,17 @@ namespace WindowsFormsApp3
         private void update_reader_Click(object sender, EventArgs e)
         {
             MessageBoxEx.EnableGlass = false;
+            if (readerid_box.Text == "" ||
+                password_box.Text == "" ||
+                phone_box.Text == "" ||
+                id_kind_box.Text == "" ||
+                id_number_box.Text == "")
+            {
+                MessageBoxEx.Show("读者信息不可为空！");
+                return;
+            }
+
+
             SqlCommand sqlcom = sqlcon.CreateCommand();
             sqlcom.CommandText = $"update reader set readerPassword='{password_box.Text}',phone='{phone_box.Text}',reg_date='{dateTime_box.Value}',certificate_kind='{id_kind_box.Text}',certificate='{id_number_box.Text}' where readerId='{readerid_box.Text}'";
             int flag = sqlcom.ExecuteNonQuery();

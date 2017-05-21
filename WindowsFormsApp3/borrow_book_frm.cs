@@ -98,6 +98,11 @@ namespace WindowsFormsApp3
         private void borrow_button_Click(object sender, EventArgs e)
         {
             MessageBoxEx.EnableGlass = false;
+            if(listViewEx1.CheckedItems.Count==0)
+            {
+                MessageBoxEx.Show("请勾选要借阅的书！");
+                return;
+            }
             int count = 0, temp, num;
             SqlCommand sqlcom = sqlcon.CreateCommand();
             temp = listViewEx1.CheckedItems.Count;
