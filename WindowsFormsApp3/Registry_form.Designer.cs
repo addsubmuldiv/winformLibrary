@@ -29,6 +29,7 @@ namespace WindowsFormsApp3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registry_form));
             this.reg_password_again = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.reg_password = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
@@ -113,7 +114,7 @@ namespace WindowsFormsApp3
             this.reg_id.Location = new System.Drawing.Point(125, 34);
             this.reg_id.Name = "reg_id";
             this.reg_id.PreventEnterBeep = true;
-            this.reg_id.Size = new System.Drawing.Size(177, 21);
+            this.reg_id.Size = new System.Drawing.Size(177, 25);
             this.reg_id.TabIndex = 0;
             // 
             // labelX4
@@ -190,8 +191,10 @@ namespace WindowsFormsApp3
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Registry_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "π‹¿Ì‘±◊¢≤·";
             this.Activated += new System.EventHandler(this.Registry_form_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registry_form_FormClosing);

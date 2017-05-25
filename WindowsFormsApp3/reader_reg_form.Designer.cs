@@ -29,6 +29,7 @@ namespace WindowsFormsApp3
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reader_reg_form));
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -301,8 +302,10 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "reader_reg_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "¶ÁÕß×¢²á";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reader_reg_form_FormClosing);
             this.ResumeLayout(false);
