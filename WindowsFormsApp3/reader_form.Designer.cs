@@ -36,23 +36,6 @@ namespace WindowsFormsApp3
             this.labelItem4 = new DevComponents.DotNetBar.LabelItem();
             this.labelItem5 = new DevComponents.DotNetBar.LabelItem();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.readerid_box = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.password_box = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.phone_box = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
-            this.dateTime_box = new System.Windows.Forms.DateTimePicker();
-            this.id_kind_box = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.comboItem4 = new DevComponents.Editors.ComboItem();
-            this.comboItem5 = new DevComponents.Editors.ComboItem();
-            this.id_number_box = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.update_reader = new DevComponents.DotNetBar.ButtonX();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
@@ -74,6 +57,23 @@ namespace WindowsFormsApp3
             this.col_kind = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.col_publishdate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.readerid_box = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.password_box = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
+            this.phone_box = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX8 = new DevComponents.DotNetBar.LabelX();
+            this.dateTime_box = new System.Windows.Forms.DateTimePicker();
+            this.id_kind_box = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem4 = new DevComponents.Editors.ComboItem();
+            this.comboItem5 = new DevComponents.Editors.ComboItem();
+            this.id_number_box = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.update_reader = new DevComponents.DotNetBar.ButtonX();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -87,8 +87,8 @@ namespace WindowsFormsApp3
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
-            this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
+            this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,6 +180,187 @@ namespace WindowsFormsApp3
             this.superTabItem3});
             this.superTabControl1.Text = "superTabControl1";
             // 
+            // superTabControlPanel1
+            // 
+            this.superTabControlPanel1.Controls.Add(this.labelX2);
+            this.superTabControlPanel1.Controls.Add(this.labelX1);
+            this.superTabControlPanel1.Controls.Add(this.comboBoxEx1);
+            this.superTabControlPanel1.Controls.Add(this.search);
+            this.superTabControlPanel1.Controls.Add(this.search_box);
+            this.superTabControlPanel1.Controls.Add(this.listViewEx1);
+            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 28);
+            this.superTabControlPanel1.Name = "superTabControlPanel1";
+            this.superTabControlPanel1.Size = new System.Drawing.Size(972, 556);
+            this.superTabControlPanel1.TabIndex = 1;
+            this.superTabControlPanel1.TabItem = this.superTabItem1;
+            // 
+            // labelX2
+            // 
+            this.labelX2.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Location = new System.Drawing.Point(409, 423);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(52, 23);
+            this.labelX2.TabIndex = 81;
+            this.labelX2.Text = "搜索：";
+            // 
+            // labelX1
+            // 
+            this.labelX1.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(300, 423);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(27, 23);
+            this.labelX1.TabIndex = 80;
+            this.labelX1.Text = "按";
+            // 
+            // comboBoxEx1
+            // 
+            this.comboBoxEx1.DisplayMember = "Text";
+            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEx1.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxEx1.FormattingEnabled = true;
+            this.comboBoxEx1.ItemHeight = 20;
+            this.comboBoxEx1.Items.AddRange(new object[] {
+            this.name,
+            this.comboItem1,
+            this.comboItem2,
+            this.comboItem3});
+            this.comboBoxEx1.Location = new System.Drawing.Point(333, 421);
+            this.comboBoxEx1.Name = "comboBoxEx1";
+            this.comboBoxEx1.Size = new System.Drawing.Size(61, 26);
+            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.comboBoxEx1.TabIndex = 79;
+            // 
+            // name
+            // 
+            this.name.Text = "书名";
+            // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "作者";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "书号";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "种类";
+            // 
+            // search
+            // 
+            this.search.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.search.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.search.Location = new System.Drawing.Point(578, 421);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.search.TabIndex = 77;
+            this.search.Text = "搜索";
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // search_box
+            // 
+            this.search_box.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.search_box.Border.Class = "TextBoxBorder";
+            this.search_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.search_box.DisabledBackColor = System.Drawing.Color.White;
+            this.search_box.ForeColor = System.Drawing.Color.Black;
+            this.search_box.Location = new System.Drawing.Point(461, 421);
+            this.search_box.Name = "search_box";
+            this.search_box.PreventEnterBeep = true;
+            this.search_box.Size = new System.Drawing.Size(100, 21);
+            this.search_box.TabIndex = 76;
+            // 
+            // listViewEx1
+            // 
+            this.listViewEx1.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.listViewEx1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.col_name,
+            this.col_id,
+            this.col_author,
+            this.col_time,
+            this.col_publish,
+            this.col_price,
+            this.col_number,
+            this.col_kind,
+            this.col_publishdate});
+            this.listViewEx1.FullRowSelect = true;
+            this.listViewEx1.GridLines = true;
+            this.listViewEx1.LabelEdit = true;
+            this.listViewEx1.Location = new System.Drawing.Point(25, 15);
+            this.listViewEx1.Name = "listViewEx1";
+            this.listViewEx1.Size = new System.Drawing.Size(920, 327);
+            this.listViewEx1.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listViewEx1.TabIndex = 61;
+            this.listViewEx1.UseCompatibleStateImageBehavior = false;
+            this.listViewEx1.View = System.Windows.Forms.View.Details;
+            this.listViewEx1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewEx1_ColumnClick);
+            // 
+            // col_name
+            // 
+            this.col_name.Text = "书名";
+            this.col_name.Width = 90;
+            // 
+            // col_id
+            // 
+            this.col_id.Text = "书号";
+            this.col_id.Width = 93;
+            // 
+            // col_author
+            // 
+            this.col_author.Text = "作者";
+            this.col_author.Width = 94;
+            // 
+            // col_time
+            // 
+            this.col_time.Text = "借阅次数";
+            this.col_time.Width = 109;
+            // 
+            // col_publish
+            // 
+            this.col_publish.Text = "出版社";
+            this.col_publish.Width = 99;
+            // 
+            // col_price
+            // 
+            this.col_price.Text = "价格";
+            this.col_price.Width = 92;
+            // 
+            // col_number
+            // 
+            this.col_number.Text = "数量";
+            this.col_number.Width = 97;
+            // 
+            // col_kind
+            // 
+            this.col_kind.Text = "种类";
+            this.col_kind.Width = 93;
+            // 
+            // col_publishdate
+            // 
+            this.col_publishdate.Text = "出版日期";
+            this.col_publishdate.Width = 148;
+            // 
+            // superTabItem1
+            // 
+            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
+            this.superTabItem1.GlobalItem = false;
+            this.superTabItem1.Name = "superTabItem1";
+            this.superTabItem1.Text = "查询图书";
+            // 
             // superTabControlPanel2
             // 
             this.superTabControlPanel2.Controls.Add(this.labelX4);
@@ -196,9 +377,9 @@ namespace WindowsFormsApp3
             this.superTabControlPanel2.Controls.Add(this.labelX6);
             this.superTabControlPanel2.Controls.Add(this.labelX5);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 31);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 28);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(972, 553);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(972, 556);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -397,202 +578,19 @@ namespace WindowsFormsApp3
             this.superTabItem2.Name = "superTabItem2";
             this.superTabItem2.Text = "修改个人信息";
             // 
-            // superTabControlPanel1
-            // 
-            this.superTabControlPanel1.Controls.Add(this.labelX2);
-            this.superTabControlPanel1.Controls.Add(this.labelX1);
-            this.superTabControlPanel1.Controls.Add(this.comboBoxEx1);
-            this.superTabControlPanel1.Controls.Add(this.search);
-            this.superTabControlPanel1.Controls.Add(this.search_box);
-            this.superTabControlPanel1.Controls.Add(this.listViewEx1);
-            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 28);
-            this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(972, 556);
-            this.superTabControlPanel1.TabIndex = 1;
-            this.superTabControlPanel1.TabItem = this.superTabItem1;
-            // 
-            // labelX2
-            // 
-            this.labelX2.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(409, 423);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(52, 23);
-            this.labelX2.TabIndex = 81;
-            this.labelX2.Text = "搜索：";
-            // 
-            // labelX1
-            // 
-            this.labelX1.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(300, 423);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(27, 23);
-            this.labelX1.TabIndex = 80;
-            this.labelX1.Text = "按";
-            // 
-            // comboBoxEx1
-            // 
-            this.comboBoxEx1.DisplayMember = "Text";
-            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxEx1.ForeColor = System.Drawing.Color.Black;
-            this.comboBoxEx1.FormattingEnabled = true;
-            this.comboBoxEx1.ItemHeight = 20;
-            this.comboBoxEx1.Items.AddRange(new object[] {
-            this.name,
-            this.comboItem1,
-            this.comboItem2,
-            this.comboItem3});
-            this.comboBoxEx1.Location = new System.Drawing.Point(333, 421);
-            this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(61, 26);
-            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxEx1.TabIndex = 79;
-            this.comboBoxEx1.SelectedIndex = 0;
-            // 
-            // name
-            // 
-            this.name.Text = "书名";
-            // 
-            // comboItem1
-            // 
-            this.comboItem1.Text = "作者";
-            // 
-            // comboItem2
-            // 
-            this.comboItem2.Text = "书号";
-            // 
-            // comboItem3
-            // 
-            this.comboItem3.Text = "种类";
-            // 
-            // search
-            // 
-            this.search.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.search.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.search.Location = new System.Drawing.Point(578, 421);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(75, 23);
-            this.search.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.search.TabIndex = 77;
-            this.search.Text = "搜索";
-            this.search.Click += new System.EventHandler(this.search_Click);
-            // 
-            // search_box
-            // 
-            this.search_box.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.search_box.Border.Class = "TextBoxBorder";
-            this.search_box.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.search_box.DisabledBackColor = System.Drawing.Color.White;
-            this.search_box.ForeColor = System.Drawing.Color.Black;
-            this.search_box.Location = new System.Drawing.Point(461, 421);
-            this.search_box.Name = "search_box";
-            this.search_box.PreventEnterBeep = true;
-            this.search_box.Size = new System.Drawing.Size(100, 21);
-            this.search_box.TabIndex = 76;
-            // 
-            // listViewEx1
-            // 
-            this.listViewEx1.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listViewEx1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.col_name,
-            this.col_id,
-            this.col_author,
-            this.col_time,
-            this.col_publish,
-            this.col_price,
-            this.col_number,
-            this.col_kind,
-            this.col_publishdate});
-            this.listViewEx1.FullRowSelect = true;
-            this.listViewEx1.GridLines = true;
-            this.listViewEx1.LabelEdit = true;
-            this.listViewEx1.Location = new System.Drawing.Point(25, 15);
-            this.listViewEx1.Name = "listViewEx1";
-            this.listViewEx1.Size = new System.Drawing.Size(920, 327);
-            this.listViewEx1.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listViewEx1.TabIndex = 61;
-            this.listViewEx1.UseCompatibleStateImageBehavior = false;
-            this.listViewEx1.View = System.Windows.Forms.View.Details;
-            this.listViewEx1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewEx1_ColumnClick);
-            // 
-            // col_name
-            // 
-            this.col_name.Text = "书名";
-            this.col_name.Width = 90;
-            // 
-            // col_id
-            // 
-            this.col_id.Text = "书号";
-            this.col_id.Width = 93;
-            // 
-            // col_author
-            // 
-            this.col_author.Text = "作者";
-            this.col_author.Width = 94;
-            // 
-            // col_time
-            // 
-            this.col_time.Text = "借阅次数";
-            this.col_time.Width = 109;
-            // 
-            // col_publish
-            // 
-            this.col_publish.Text = "出版社";
-            this.col_publish.Width = 99;
-            // 
-            // col_price
-            // 
-            this.col_price.Text = "价格";
-            this.col_price.Width = 92;
-            // 
-            // col_number
-            // 
-            this.col_number.Text = "数量";
-            this.col_number.Width = 97;
-            // 
-            // col_kind
-            // 
-            this.col_kind.Text = "种类";
-            this.col_kind.Width = 93;
-            // 
-            // col_publishdate
-            // 
-            this.col_publishdate.Text = "出版日期";
-            this.col_publishdate.Width = 148;
-            // 
-            // superTabItem1
-            // 
-            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
-            this.superTabItem1.GlobalItem = false;
-            this.superTabItem1.Name = "superTabItem1";
-            this.superTabItem1.Text = "查询图书";
-            // 
             // superTabControlPanel3
             // 
             this.superTabControlPanel3.Controls.Add(this.listView1);
             this.superTabControlPanel3.Controls.Add(this.Excel_button);
             this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 31);
+            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 28);
             this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(972, 553);
+            this.superTabControlPanel3.Size = new System.Drawing.Size(972, 556);
             this.superTabControlPanel3.TabIndex = 0;
             this.superTabControlPanel3.TabItem = this.superTabItem3;
             // 
             // listView1
             // 
-            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -679,8 +677,8 @@ namespace WindowsFormsApp3
             this.Load += new System.EventHandler(this.reader_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
-            this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
+            this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
